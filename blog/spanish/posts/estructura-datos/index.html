@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    <base href="https://zalimben.github.io/">
+    <title>Estructura Datos &mdash; Saúl Zalimben</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura:400,700">
+
+    
+    
+    <link rel="stylesheet" href="https://zalimben.github.io/css/style.72a4d7747ff9d9964eac97e06e7e0bf95d3a656424f0afa99146417d16293b3c.css">
+    
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://zalimben.github.io/images/favicon2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://zalimben.github.io/images/favicon2.png">
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FDLYCJTDV"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-2FDLYCJTDV', { 'anonymize_ip': false });
+}
+</script>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zalimben.github.io/images/profile.jpg"/>
+
+<meta name="twitter:title" content="Estructura Datos"/>
+<meta name="twitter:description" content="La estructura de datos es el elemento fundamental de la ciencia de computación, son un medio para manejar grandes cantidades de datos de manera eficiente."/>
+<meta name="twitter:site" content="@sZalimben"/>
+
+    
+    
+<meta name="twitter:creator" content="@sZalimben" />
+
+    <meta property="og:title" content="Estructura Datos" />
+<meta property="og:description" content="La estructura de datos es el elemento fundamental de la ciencia de computación, son un medio para manejar grandes cantidades de datos de manera eficiente." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zalimben.github.io/blog/spanish/posts/estructura-datos/" /><meta property="og:image" content="https://zalimben.github.io/images/profile.jpg"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-03-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-12-09T20:40:09-03:00" />
+
+
+
+  </head>
+  <body>
+    <header id="identity-header" class="header sticky">
+  <nav>
+    <section class="menu">
+    <ul>
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://zalimben.github.io/" class="menu ">About Me</a>
+      </li>
+    
+      
+      
+      
+      <li>
+        <a href="https://zalimben.github.io/blog" class="menu active">Blog</a>
+      </li>
+    
+    <ul>
+    </section>
+  </nav>
+</header>
+    <main class="wrap">
+        
+  <article><div>
+        <h1 id="post-title" class="post-title">
+        	Estructura Datos
+        </h1>
+    </div>
+
+    <h4 class="post-author">
+         Saúl Zalimben - 2020-03-27
+    </h4>
+    <hr>
+    <section id="content" class="markdown-body" >
+        <blockquote>
+<p><em>“El estudio de estructura de datos y algoritmos que los manipulan es el corazón de la ciencia de la computación”</em></p>
+<p>&ndash; Clifford A. Shaffer</p>
+</blockquote>
+<p>Siguiendo la reflexión de Shaffer, la estructura de datos es el elemento fundamental de la ciencia de computación, pero qué realmente es una estructura de dato, para definirlo tenemos que descomponerlo aún más, partiendo desde su componente más básico, un tipo.</p>
+<p>Un <strong>tipo</strong> es un conjunto de valores que puede poseer una variable, por ejemplo el tipo booleano con dos posibles valores, de falso o verdadero o bien los números enteros.</p>
+<p>Se dice que son <strong>tipos simples o primitivos</strong> cuando se definen sobre sí mismos, mientras que aquellos datos que se definen en función a otros se denominan <strong>compuestos o agregados</strong>, por ejemplo si deseamos definir el tipo <em>Persona</em>, este tipo podría estar formado por tipos primitivos para representar cada una de sus característica; su nombre, su apellido, edad y así sucesivamente.</p>
+<p>Cada lenguaje de programación dispone de su propio conjunto de tipos primitivos, a continuación los tipos primitivos presentes en el lenguaje programación Python y Java.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Tipos primitivos</th>
+<th style="text-align:right">Despliega</th>
+<th style="text-align:right">Ejemplos/Rango</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">int</td>
+<td style="text-align:right">números enteros</td>
+<td style="text-align:right">42</td>
+</tr>
+<tr>
+<td style="text-align:right">float</td>
+<td style="text-align:right">números de punto flotante</td>
+<td style="text-align:right">1.0</td>
+</tr>
+<tr>
+<td style="text-align:right">complejos</td>
+<td style="text-align:right">números complejos</td>
+<td style="text-align:right">2 + 3j</td>
+</tr>
+<tr>
+<td style="text-align:right">boolean</td>
+<td style="text-align:right">valores lógicos</td>
+<td style="text-align:right">TRUE o FALSE</td>
+</tr>
+<tr>
+<td style="text-align:right">cadenas</td>
+<td style="text-align:right">texto</td>
+<td style="text-align:right">&lsquo;Bienvenido a Python&rsquo;</td>
+</tr>
+<tr>
+<td style="text-align:right">lista</td>
+<td style="text-align:right">colección de objetos</td>
+<td style="text-align:right">[1, 2, 3, 4]</td>
+</tr>
+<tr>
+<td style="text-align:right">tupla</td>
+<td style="text-align:right">colección de objetos de distinto tipo</td>
+<td style="text-align:right">(&ldquo;A&rdquo;, 1.2, 0, -2)</td>
+</tr>
+<tr>
+<td style="text-align:right">diccionario</td>
+<td style="text-align:right">colección de objetos del tipo clave-valor</td>
+<td style="text-align:right">{&ldquo;mantisa&rdquo;:5.81, &ldquo;exponente&rdquo;:1.4}</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Tipos de datos primitivos en Python</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Tipos primitivos</th>
+<th style="text-align:right">Despliega</th>
+<th style="text-align:right">Ejemplos/Rango</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">byte</td>
+<td style="text-align:right">números enteros de 8-bit</td>
+<td style="text-align:right">–128 a 127</td>
+</tr>
+<tr>
+<td style="text-align:right">short</td>
+<td style="text-align:right">números enteros de 16-bit</td>
+<td style="text-align:right">–32,768 a 32,767</td>
+</tr>
+<tr>
+<td style="text-align:right">int</td>
+<td style="text-align:right">números enteros de 32-bit</td>
+<td style="text-align:right">–2,147,483,648 a 2,147,483,647</td>
+</tr>
+<tr>
+<td style="text-align:right">long</td>
+<td style="text-align:right">números enteros de 64 bit</td>
+<td style="text-align:right">–2 <sup> 63</sup> a 2<sup>63</sup> – 1</td>
+</tr>
+<tr>
+<td style="text-align:right">float</td>
+<td style="text-align:right">números de punto flotante</td>
+<td style="text-align:right">10<sup> -46</sup> a 10<sup>38</sup></td>
+</tr>
+<tr>
+<td style="text-align:right">double</td>
+<td style="text-align:right">colección de objetos</td>
+<td style="text-align:right">10<sup> -324</sup> a 10<sup>308</sup></td>
+</tr>
+<tr>
+<td style="text-align:right">char</td>
+<td style="text-align:right">caracteres Unicode</td>
+<td style="text-align:right">&ldquo;A&rdquo;, &ldquo;c&rdquo;, &ldquo;P&rdquo;</td>
+</tr>
+<tr>
+<td style="text-align:right">boolean</td>
+<td style="text-align:right">valores lógicos</td>
+<td style="text-align:right">TRUE o FALSE</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Tipos de datos primitivos en JAVA</p>
+</blockquote>
+<p>Si bien existen tipos compartidos por varios lenguajes de programación estos pueden variar acorde la orientación y el propósito del lenguaje, como es el caso de Python y Java.</p>
+<p>Un <strong>tipo de dato</strong> es un tipo junto a todas las operaciones elementales que manipulan dicho tipo, un conjunto de funciones básicas que uno puede aplicar a estos valores, por ejemplo para los números enteros se pueden aplicar las operaciones básicas de la aritmética (suma, resta, multiplicación y división).</p>
+<p>Mientras que un <strong>tipo de dato abstracto (TDA)</strong> es la definición de un tipo de dato como un componente que está definido en términos de su tipo y el conjunto de operaciones sobre ese tipo, en donde las operaciones no se encuentran implementadas, solo su comportamiento, es decir, se define <strong>qué debe hacer y no el cómo hacer</strong>.</p>
+<p>Y finalmente la <strong>estructura de dato</strong> es la implementación de un TDA en algún lenguaje de programación, es decir, la representación de algún tipo de dato y de sus operaciones asociadas.</p>
+<p>Un TDA define la forma lógica de un tipo de dato, mientras que una estructura de dato implementa la forma física del tipo de dato.</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/4c02moocan9xt9tk0zei.png" alt="TDA"></p>
+<p>Cuando se desea resolver un problema es importante seleccionar una estructura de datos adecuada, para dicho efecto se debe analizar los recursos disponibles y utilizar la que mejor se adecua a las necesidades del problema.</p>
+<h3 id="referencias">Referencias:</h3>
+<ul>
+<li>Shaffer, Clifford A. (2010). <em>A Practical Introduction to Data Structures and Algorithm.  (3rd ed. Java Version).</em></li>
+<li>Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein, Clifford (2009). <em>Introduction to Algorithms, Third Edition (3rd ed.)</em>. The MIT Press</li>
+</ul>
+
+    </section>
+
+    
+    <section class="share-blog">
+    	<div id="end-blog-sign">
+            Saúl Zalimben 
+    	</div>
+    	<div id="end-blog-share-buttons" class="share-buttons">
+            <div id="twitter">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+                    class="twitter-share-button" data-via="szalimben" data-show-count="false">
+                    Tweet
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="linkedin">
+                <script src="https://platform.linkedin.com/in.js" type="text/javascript">
+                	LinkedIn
+                </script>
+                <script type="IN/Share" data-url="https://zalimben.github.io/blog/spanish/posts/estructura-datos/"></script>
+            </div>
+            <div id="bmc">
+                <a href="https://www.buymeacoffee.com/szalimben" target="_blank">
+                    <div class="bmc-button">
+                        <img src = "images/bmc-logo.svg" style="height: 16px" 
+                        alt="Bue Me a Coffee"/>
+                        <span style="vertical-align: top;"> <strong> BMC </strong> </span>
+                    </div>
+                </a>
+            </div>
+      </div>
+    </section>
+    
+	<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js">
+	</script>
+	<script>addBackToTop({
+			diameter: 56,
+			backgroundColor: 'rgb(255, 82, 82)',
+			textColor: '#fff'
+		})
+	</script>
+  </article>
+
+    </main>
+    <footer class="footer">
+  <p class="copyright">© 2021 Saúl Zalimben. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+  <p class="powered-by">Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a> & <a target="_blank" href="https://github.com/posquit0/hugo-awesome-identity">Awesome Identity</a>.</p>
+</footer>
+
+  </body>
+</html>
+
