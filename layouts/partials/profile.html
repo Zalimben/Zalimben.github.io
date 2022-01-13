@@ -1,0 +1,22 @@
+{{ with .Site.Params.profile -}}
+<section class="profile">
+  <div class="portrait">
+    <a href="/">
+      <div class="spinner"></div>
+      <div class="img" style="background-image: url('{{ .portrait | default "/images/portrait-default.png" | relURL }}')"></div>
+    </a>
+  </div>
+  <h1 class="name">
+    {{ .firstname }} <b>{{ .lastname }}</b> 
+    <img class="circle" src = "images/py.svg" alt="Paraguay"/>
+  </h1>
+  {{ with .title -}}
+  <h2 class="title">
+    {{ . }} <i class="fas fa-coffee"></i> 
+  </h2>
+  {{- end }}
+  {{- with .bio -}}
+  <span class="bio">{{ . | markdownify }}</span>
+  {{- end }}
+</section>
+{{- end }}

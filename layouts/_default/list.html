@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <article>
+    <h1>{{.Title}} </h1>
+    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+    {{.Content}}
+
+    {{ range .Pages.GroupByParam "idiom" }}
+
+    <h2>{{ .Key}}</h2>
+
+    <ul class="list-posts" >
+    <!-- Ranges through content/posts/*.md -->
+        {{ range .Pages }}
+        <a href="{{.Permalink}}">
+            <li>
+                <div id="post-image">
+                    <img src="{{ .Params.blog_list_image }}">
+                </div>
+                <div id="post-information">    
+                    <h3>{{.Date.Format "2006-01-02"}} | {{.Title}} </h3>
+                    <div id="post-description">
+                        {{ .Description }}
+                    </div>
+                </div>
+            </li>
+        </a>
+        <hr style="margin: 0;">
+        {{ end }}
+    </ul>
+    {{ end }}
+  </article>
+{{ end }}
