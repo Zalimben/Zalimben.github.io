@@ -1,0 +1,66 @@
+{{ define "main" }}
+  <article>
+
+    {{- with $.Params.images -}}
+    <div class="cover-image" >
+        <img src="{{ index . 0 | absURL }}"/>
+    </div>
+    {{ end -}}
+
+    <div>
+        <h1 id="post-title" class="post-title">
+        	{{ .Title }}
+        </h1>
+    </div>
+
+    <h4 class="post-author">
+         {{ .Params.author }} - {{.Date.Format "2006-01-02"}}
+    </h4>
+    <hr>
+    <section id="content" class="markdown-body" >
+        {{ .Content }}
+    </section>
+
+    <!-- Share On Buttongs  -->
+    <section class="share-blog">
+    	<div id="end-blog-sign">
+            {{ .Params.author }} 
+    	</div>
+    	<div id="end-blog-share-buttons" class="share-buttons">
+            <div id="twitter">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+                    class="twitter-share-button" data-via="szalimben" data-show-count="false">
+                    Tweet
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="linkedin">
+                <script src="https://platform.linkedin.com/in.js" type="text/javascript">
+                	LinkedIn
+                </script>
+                <script type="IN/Share" data-url="{{ .Page.Permalink | absURL }}"></script>
+            </div>
+            <div id="bmc">
+                <a href="https://www.buymeacoffee.com/szalimben" target="_blank">
+                    <div class="bmc-button">
+                        <img src = "images/bmc-logo.svg" style="height: 16px" 
+                        alt="Bue Me a Coffee"/>
+                        <span style="vertical-align: top;"> <strong> BMC </strong> </span>
+                    </div>
+                </a>
+            </div>
+      </div>
+    </section>
+    <!-- Go to Top Button  -->
+	<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js">
+	</script>
+	<script>addBackToTop({
+			diameter: 56,
+			backgroundColor: 'rgb(255, 82, 82)',
+			textColor: '#fff'
+		})
+	</script>
+  </article>
+{{ end }}
+
+

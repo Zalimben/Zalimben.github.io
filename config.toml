@@ -1,0 +1,151 @@
+languageCode = 'en-us'
+theme = "awesome-identity"
+baseURL = "https://zalimben.github.io/"
+title = "Saúl Zalimben"
+googleAnalytics = "G-2FDLYCJTDV"
+
+# Content without language indicator will default to this language
+defaultContentLanguage = "en"
+# Make .Summary and .WordCount behave correctly for CJK languages
+hasCJKLanguage = true
+PygmentsCodeFences = true
+# Enable to turn relative URLs into absolute
+canonifyURLs = true
+# Do not convert the url/path to lowercase
+disablePathToLower = false
+# Enable Emoji emoticons support for page content
+enableEmoji = true
+# Update the `Lastmod` parameter for each page using the last git commit date for that content file
+enableGitInfo = true
+# Enable generation of `robots.txt` file
+enableRobotsTXT = true
+
+## Meta Configurations (HTTP Meta tags, OpenGraph & Twitter Cards)
+[params]
+  description = 'Software Engineer, Professor and Coffee Lover'
+  images = ['/images/profile.jpg']
+
+## Profile Configurations
+[params.profile]
+  portrait = "/images/profile.jpg"
+  firstname = "Saúl"
+  lastname = "Zalimben"
+  quote = "I try to learn from every experience, good or bad. - Tim Tebow"
+  title = "Software Engineer / Professor / Coffee Lover"
+  bio = """Current Senior Software Engineer at [**Software Natura**](https://swnat.com/), and Professor at [**FP-UNA**](https://www.pol.una.py/)
+
+  6+ years experience specializing in fullstack software development, mainly backend development.
+
+  Experienced in creating high-quality code considering the best coding practices, architectural patterns and performance, and leading small development teams.
+
+  Interested in devising a better problem-solving method for challenging tasks, and learning new technologies and tools if the need arises.
+  """
+
+## Contacts Configurations
+[social]
+  email = "szalimben93@gmail.com"
+  github = "zalimben"
+  linkedin = "szalimben"
+  devto = "szalimben"
+  researchgate = "Saul-Zalimben"
+  twitter = "sZalimben"
+
+## Actions Configurations
+[[params.actions]]
+  name = "Resume"
+  url = "https://drive.google.com/file/d/1qaqftVd5YYmIoREHe-i-aiRBRFU1ntdr/view?usp=sharing"
+[[params.actions]]
+  name = "Review my CV"
+  url = "https://drive.google.com/file/d/1vdkxd1E3Y3jIyFXeh1QNu6FDXwe8YHHP/view?usp=sharing"
+
+##[[params.actions]]
+##  name = "CV [Spanish]"
+##  url = "https://github.com/Zalimben/Zalimben.github.io/raw/main/files/CV_Spanish.pdf"
+
+[[params.actions]]
+  name = "Buy Me a Coffee"
+  url = "https://www.buymeacoffee.com/szalimben"
+
+sectionPagesMenu = "main"
+[menu]
+[[menu.main]]
+  identifier = 'blog'
+  name = 'Blog'
+  pre = ""
+  url = '/blog'
+  [menu.main.params]
+    class = 'menu'
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About Me'
+  pre = ""
+  url = '/'
+  [menu.main.params]
+    class = 'menu'
+
+## Footer Configurations
+[params.footer]
+  copyright = "  &copy; 2022 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  poweredBy = true
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# Options to make output .md files
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
+
+## Privacy Configurations (GDPR)
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    # Make the users’ IP addresses are anonymized within Google Analytics
+    anonymizeIP = false
+    # Make the GA templates respect the “Do Not Track” HTTP header
+    respectDoNotTrack = false
+    # Disable the use of Cookies and use Session Storage to Store the GA Client ID
+    useSessionStorage = false
