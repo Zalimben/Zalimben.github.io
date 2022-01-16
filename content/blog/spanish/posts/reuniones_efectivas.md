@@ -92,7 +92,8 @@ Esto actúa como punto medio y crea un balance entre: promover la eficiencia en 
 #### ¿Cómo romper el hielo? 
 
 Se debe crear una conversación cuya función es traer a los presentes a un terreno común que logre aunarlos y generar una conversación fluida, aliviar la tensión en una situación incómoda y crear un ambiente de confianza.
-** Para romper el hielo:**
+
+**Para romper el hielo:**
 - Se puede establecer un periodo de tiempo al comenzar las reuniones para verificar si existen personas que desean compartir novedades personales o profesionales.
 - Introducir en la agenda elementos designados para compartir opiniones y conjeturas, elementos banales que brinden facilidad para el diálogo.
 - Al cumplir con el objeto de la reunión, el tiempo restante se puede dedicar a socializar entre las personas presentes.
