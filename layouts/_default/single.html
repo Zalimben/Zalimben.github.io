@@ -3,13 +3,17 @@
 
     {{- with $.Params.images -}}
     <div class="cover-image" >
-        <img src="{{ index . 0 | absURL }}"/>
+        <img 
+        {{ if isset $.Params "transform" }} 
+          style='transform: translateY({{$.Params.transform}});'
+        {{ end }}
+        src="{{ index . 0 | absURL }}"/>
     </div>
     {{ end -}}
 
     <div>
         <h1 id="post-title" class="post-title">
-        	{{ .Title }}
+        	{{ .Title }} {{ if isset $.Params "transform-img" }} aaa {{ end }}
         </h1>
     </div>
 

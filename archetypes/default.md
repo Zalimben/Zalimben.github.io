@@ -3,11 +3,11 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 description: ""
-tags: ''
-blog_list_image: ''
+tags: 
+blog_list_image: 
 author: Saúl Zalimben
-slug: "{{ replace .Name "_" "-" }}"
-idiom: ''
+slug: {{ replace .Name "_" "-" }}
+idiom: 
 ---
 
 ---
