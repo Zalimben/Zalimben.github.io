@@ -3,7 +3,7 @@ title: "Trabajo Remoto: Entrevistas"
 date: 2021-11-22
 draft: false
 description: La entrevista es el proceso donde se analiza al candidato para comprobar su idoneidad para uan posición laboral, mientras que el aspirante debe aprovechar la oportunidad para destacar sus habilidades
-tags: #spanish #español #trabajoremoto #homeoffice
+tags: ['spanish', 'español','trabajo remoto','home office']
 images: ['https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xxlpdfj8lxdzn0e24zqs.png',
     'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5x2gz9471clw7fx3cssz.jpg', 
     'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4wm3vu4a2jkd4rn2ijcb.jpg'

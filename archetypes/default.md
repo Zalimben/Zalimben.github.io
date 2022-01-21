@@ -3,7 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 description: ""
-tags: 
+tags: ['']
+images: ['']
 blog_list_image: 
 author: Saúl Zalimben
 slug: {{ replace .Name "_" "-" }}

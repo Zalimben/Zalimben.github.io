@@ -3,7 +3,7 @@ title: "Trabajo Remoto: Búsqueda"
 date: 2021-11-08
 draft: false
 description: El trabajo remoto está para quedarse, no es una moda temporal, y debemos estar preparados para los nuevos desafíos que se vienen.
-tags: #spanish #español #trabajoremoto #homeoffice
+tags: ['spanish', 'español','trabajo remoto', 'home office']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5x2gz9471clw7fx3cssz.jpg
 images: ['https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5x2gz9471clw7fx3cssz.jpg']
 author: Saúl Zalimben

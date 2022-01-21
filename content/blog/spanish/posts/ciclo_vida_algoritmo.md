@@ -4,7 +4,7 @@ draft: false
 date: 2020-04-11
 author: Saúl Zalimben
 description: Es el proceso de dividir el trabajo de desarrollo en distintas fases para mejorar el diseño, la gestión del producto y la gestión del proyecto.
-tags: #spanish #español #principiante #fundamentos
+tags: ['spanish', 'español','principiante','fundamentos']
 images: ['https://dev-to-uploads.s3.amazonaws.com/i/9fvo5f0b52x89780m1al.jpg']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/i/9fvo5f0b52x89780m1al.jpg
 author: Saúl Zalimben

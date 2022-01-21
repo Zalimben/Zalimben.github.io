@@ -3,7 +3,7 @@ title: "Trabajo Remoto: Búsqueda y Capacitación"
 date: 2021-12-02T15:15:40-03:00
 draft: false
 description: "Si quieres encontrar un trabajo a distancia o buscas capacitarte, aquí encontrarás todo lo que necesitas"
-tags: #spanish #español #trabajoremoto #homeoffice
+tags: ['spanish', 'español', 'trabajo remoto', 'home office']
 transform: -20%
 images: ['images/job-search.jpg']
 blog_list_image: images/job-search.jpg

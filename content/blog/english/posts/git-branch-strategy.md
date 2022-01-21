@@ -3,7 +3,7 @@ title: "Git Branch Strategy"
 date: 2022-01-17
 draft: false
 description: "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency"
-tags: #git #versioncontrol #branching #beginners
+tags: ['git', 'version control', 'branching', 'beginners']
 blog_list_image: images/git-branch.png
 transform: 0%
 images: ['images/git-branch.png']
@@ -28,14 +28,14 @@ If you're looking for a *Git Tutorial*, I recommend my previous post on it, [Git
 
 Git allows teams to tweak Git Workflows, as it fits the team’s culture. As a result, teams and organizations are often required to choose a particular branching strategy that matches their release cadence, while optimizing productivity depending on their team size, strengths and weaknesses.
 
-Some Git Branching Models are the best in certain situations, but none can be considered the *"best"*, therefore, it is important to mention that there is no such thing as "Best Git Branching Model" or "Best Git Workflow" or "Best Gitflow" or any of its variations, but what you may find is *"A successful Git branching model for X situation"* which is true as Git Workflows are flexible and change as needed, so in certain situations one Git Workflow is better than others, simple as that.
+Some Git Branching Models are the best in certain situations, but none can be considered the *"best"*, therefore, it is important to mention that there is no such thing as "Best Git Branching Model" or "Best Git Workflow" or "Best Gitflow" or any of its variations, but what you may find is *"A successful Git branching model for X situation"* which is true as Git Workflows are flexible and change as needed, so in certain situations, one Git Workflow is better than others, simple as that.
 
 >
 > There is no such thing as *"Best Git Branching Model"*.
 >
 
 ## Git Workflows
-A Git Workflow is a recipe or recommendation for how to use Git to accomplish work in a consistent and productive manner, and deal with the branching problem.
+A Git Workflow is a recipe or recommendation for how to use Git to accomplish work in a consistent and productive manner and deal with the branching problem.
 
 > **Gitflow is not Git Workflow**
 >
@@ -65,7 +65,7 @@ This post performs a [comparative analysis](https://dev.to/arbitrarybytes/compar
 There are also several custom Git Branching Models; In some cases, teams take a well-defined git workflow and modify it based on the needs of the project. Therefore, it is very common to find mutations of the git branching models mentioned above.
 
 #### Example: [Git Environment Branching Flow](https://dev.to/preethamsathyamurthy/git-branching-and-branching-strategy-4mci)
-This strategy focus on branches per environment (development, staging and production), where each branch is restricted by rules.
+This strategy focuses on branches per environment (development, staging and production), where each branch is restricted by rules.
 
 Initially, three branches are required: staging, develop and master (or main).
 

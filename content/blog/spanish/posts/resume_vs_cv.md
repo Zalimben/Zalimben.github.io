@@ -3,7 +3,7 @@ title: "Resume vs Curriculum Vitae (CV)"
 date: 2021-12-17
 draft: false
 description: "Con frecuencia ambos términos se utilizan para referirse a lo mismo. Si bien son documentos muy similares con una misma finalidad, existen diferencias entre ambos" 
-tags: #spanish #español #resume #curriculum
+tags: ['spanish', 'español','resume','curriculum']
 images: ['images/resume_cv.jpg', 'images/cv-vs-resume.png']
 blog_list_image: images/resume_cv.jpg
 author: Saúl Zalimben

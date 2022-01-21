@@ -3,7 +3,7 @@ title: "Reuniones Efectivas"
 date: 2021-10-18
 draft: false
 description: Una reunión debe contribuir al logro de los resultados del negocio, de tal forma que el tiempo invertido permita a las personas avanzar hacia las metas.
-tags: #spanish #español
+tags: ['spanish', 'español','reunion','comunicación']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eeg263mkoexjlmm8h45t.jpg
 images: ['https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eeg263mkoexjlmm8h45t.jpg']
 author: Saúl Zalimben

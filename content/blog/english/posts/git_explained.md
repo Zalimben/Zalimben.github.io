@@ -3,7 +3,7 @@ title: Git Explained by DEV Community
 date: 2020-06-21
 draft: false
 description: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-tags: #git #versioncontrol #tutorial #beginner
+tags: ['git', 'version control', 'tutorial', 'beginners']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/i/whyef5sszsx5acquyq74.jpg
 author: Saúl Zalimben
 slug: git-explained
