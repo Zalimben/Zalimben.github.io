@@ -20,6 +20,13 @@
                     <h3>{{.Date.Format "2006-01-02"}} | {{.Title}} </h3>
                     <div id="post-description">
                         {{ .Description }}
+                        {{ with .Params.tags }}
+                        <ul id="tags" class="tags">
+                          {{ range . }}
+                            <li> #{{ . }}</li>
+                          {{ end }}
+                        </ul>
+                        {{ end }}
                     </div>
                 </div>
             </li>

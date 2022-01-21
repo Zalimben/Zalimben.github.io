@@ -1,0 +1,34 @@
+{{ define "main" }}
+<section>
+   <h1>{{ .Title }}</h1>
+   <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+  <ul class="tags" >  
+  {{ range .Site.Taxonomies.tags }}
+    <li>
+        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }} </a> ({{ .Count }}) 
+    </li>
+  {{end}}
+  </ul>
+  <hr> 
+  <ul class="" >
+    {{ range .Site.Taxonomies.tags }}
+      <li>
+        <h2> 
+          <a href="{{ .Page.Permalink }}">#{{ .Page.Title }} </a> ({{ .Count }}) 
+        </h2>
+      </li>
+    <ul>
+    {{ range .Pages }}
+        <li>
+            <h4>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+              <time> - Posted on {{ .Date.Format "Jan 2, 2006" }}</time>
+            </h4>
+        </li>
+    {{ end }}
+    </ul>
+
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

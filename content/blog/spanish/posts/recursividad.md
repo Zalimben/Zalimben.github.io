@@ -3,7 +3,7 @@ title: Recursividad
 date: 2020-05-03
 draft: false
 description: Herramienta para solucionar problemas que se encuentran definidos en términos iterativos.
-tags: #spanish #español #principiante #fundamentos
+tags: ['spanish', 'español','principiante','fundamentos']
 transform: -15%
 images: ['https://dev-to-uploads.s3.amazonaws.com/i/gtii7l9u8jy8m5qtolrh.jpg']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/i/gtii7l9u8jy8m5qtolrh.jpg

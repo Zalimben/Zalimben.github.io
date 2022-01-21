@@ -13,13 +13,27 @@
 
     <div>
         <h1 id="post-title" class="post-title">
-        	{{ .Title }} {{ if isset $.Params "transform-img" }} aaa {{ end }}
+        	{{ .Title }}
         </h1>
     </div>
+    {{ with .Params.tags }}
+    <ul id="tags" class="tags">
+      {{ range . }}
+        <li> 
+            <a href="{{ "tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a> 
+        </li>
+      {{ end }}
+    </ul>
+    {{ end }}
 
-    <h4 class="post-author">
-         {{ .Params.author }} - {{.Date.Format "2006-01-02"}}
-    </h4>
+    <h3 class="post-author">
+         {{ .Params.author }}
+    </h3>
+        Posted on {{.PublishDate.Format "Jan 2, 2006" }} 
+        {{ if .Lastmod.After .PublishDate }}
+        <b> |               </b> Updated on {{ .Lastmod.Format "Jan 2, 2006" }} 
+        {{ end }}
+        <b> | </b> {{.ReadingTime }} min read
     <hr>
     <section id="content" class="markdown-body" >
         {{ .Content }}
@@ -55,6 +69,16 @@
             </div>
       </div>
     </section>
+    <!-- <section>
+        Continue reading:
+        {{ with .PrevInSection }}
+          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
+    </section> -->
     <!-- Go to Top Button  -->
 	<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js">
 	</script>
@@ -66,5 +90,4 @@
 	</script>
   </article>
 {{ end }}
-
 

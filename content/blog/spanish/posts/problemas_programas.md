@@ -4,7 +4,7 @@ date: 2020-04-03
 draft: false
 author: Saúl Zalimben
 description: El mundo de la ciencia de computación constantemente busca resolver problemas, pero no debemos delimitar este término como si fuera alguna ecuación matemática, puesto que en la computación un problema es toda tarea que deba ser resuelta.
-tags: #spanish #español #principiante #fundamentos
+tags: ['spanish', 'español','principiante','fundamentos']
 images: ['https://dev-to-uploads.s3.amazonaws.com/i/pqzf14op0gd62gmvos1n.jpg']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/i/pqzf14op0gd62gmvos1n.jpg
 author: Saúl Zalimben

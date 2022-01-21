@@ -3,7 +3,7 @@ title: "Remote Work: Job Hunt & Practice"
 date: 2021-12-02T15:15:40-03:00
 draft: false
 description: "If you want to find a remote job or you are looking for training, here you will find everything you need"
-tags: #trabajoremoto #homeoffice #jobhunt #interview
+tags: ['remote work', 'home office', 'job hunt', 'interview']
 transform: -20%
 images: ['images/job-search.jpg']
 blog_list_image: images/job-search.jpg
