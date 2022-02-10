@@ -1,0 +1,192 @@
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<base href=https://zalimben.github.io/>
+<title>Write Git Commit Messages &mdash; Saúl Zalimben</title>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css>
+<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.7.2/css/all.css integrity=sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr crossorigin=anonymous>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:100,700">
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Jura:400,700">
+<link rel=stylesheet href=https://zalimben.github.io/css/style.e02518f273a0b01ab628ccc4da784738f0d215f3e4d13d088938a71b76cc1fc1.css>
+<link rel=icon type=image/png sizes=32x32 href=https://zalimben.github.io/images/favicon2.png>
+<link rel=icon type=image/png sizes=16x16 href=https://zalimben.github.io/images/favicon2.png>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FDLYCJTDV"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-2FDLYCJTDV',{anonymize_ip:!1})}</script>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://zalimben.github.io/images/git-message.png">
+<meta name=twitter:title content="Write Git Commit Messages">
+<meta name=twitter:description content="A well-crafted Git commit message is the best way to communicate context about changes to other developers working on that project, and indeed, to your future self.">
+<meta name=twitter:site content="@sZalimben">
+<meta name=twitter:creator content="@sZalimben">
+<meta property="og:title" content="Write Git Commit Messages">
+<meta property="og:description" content="A well-crafted Git commit message is the best way to communicate context about changes to other developers working on that project, and indeed, to your future self.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zalimben.github.io/blog/english/posts/write-git-commit-message/"><meta property="og:image" content="https://zalimben.github.io/images/git-message.png"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2022-02-10T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-02-10T12:02:36-03:00">
+</head>
+<body>
+<header id=identity-header class="header sticky">
+<nav>
+<section class=menu>
+<ul>
+<li>
+<a href=https://zalimben.github.io/ class=menu>About Me</a>
+</li>
+<li>
+<a href=https://zalimben.github.io/blog class="menu active">Blog</a>
+</li>
+<ul>
+</section>
+</nav>
+</header>
+<main class=wrap>
+<article><div class=cover-image>
+<img style=transform:translateY(0%) src=https://zalimben.github.io/images/git-message.png>
+</div>
+<div>
+<h1 id=post-title class=post-title>
+Write Git Commit Messages
+</h1>
+</div>
+<ul id=tags class=tags>
+<li>
+<a href=https://zalimben.github.io/tags/git>#git</a>
+</li>
+<li>
+<a href=https://zalimben.github.io/tags/tutorial>#tutorial</a>
+</li>
+<li>
+<a href=https://zalimben.github.io/tags/beginners>#beginners</a>
+</li>
+</ul>
+<h3 class=post-author>
+Saúl Zalimben
+</h3>
+Posted on Feb 10, 2022
+<b> | </b> Updated on Feb 10, 2022
+<b> | </b> 5 min read
+<hr>
+<section id=content class=markdown-body>
+<p>This article assumes you already understand basic Git Workflow. If not, I suggest reading previous articles on this series.</p>
+<hr>
+<h2 id=why-should-you-write-good-commit-messages>Why should you write good commit messages?</h2>
+<blockquote>
+<p><em>&ldquo;When a programmer first creates his code, only he and God know how it works, a few months down the line and only God knows."</em></p>
+</blockquote>
+<p>Not sure who said this phrase, but it is so accurate. The same thing happens when we write <strong>Commit Messages</strong>.</p>
+<p>We&rsquo;re often pressed for time when it comes to Git commits, and so we write something random or without meaning in our commit message like &ldquo;Fixes&rdquo; or &ldquo;WIP&rdquo;, even memes, memes!</p>
+<p>I challenge you to figure out the following commit message:</p>
+<p><code>Minor fixes</code></p>
+<p>Perhaps the most common commit message, but what does it mean exactly? We can ask ourselves so many questions about it.</p>
+<ul>
+<li>Minor fixes on what?</li>
+<li>What were the fixes?</li>
+<li>Why fixes were needed?</li>
+<li>&mldr; and many more.</li>
+</ul>
+<p>Writing commit messages that are not telling the whole story is a bad practice. Commit messages should be helpful and make sense so people working on the project understand the changes from the message itself.</p>
+<p>Using the right commit message helps make it more meaningful and it provides clarity on your updated piece of code, for everyone.</p>
+<p>It seems like writing good commit messages is easy and everyone understands the benefits of doing it. Yet, you can find messages like the above.</p>
+<p>Commit messages can communicate why a change was made, they help the narrative of the project. Poetically, commit messages are telling the story of the project, and you can read it using the <code>git log</code> command.</p>
+<blockquote>
+<p>Don&rsquo;t destroy a good story, build one.</p>
+</blockquote>
+<h2 id=how-to-write-good-commit-messages>How to write good commit messages?</h2>
+<p>There are several conventions used by different teams, projects, and developers. I&rsquo;ll just give you some general guidelines and pointers, but it&rsquo;s up to you to decide which convention you want to follow.</p>
+<blockquote>
+<p>If you work for a company or contribute to open source, you have to adapt to their convention.</p>
+</blockquote>
+<p>Check out <a href=https://hashnode.com/post/which-commit-message-convention-do-you-use-at-work-ck3e4jbdd00zyo4s1h7mc7e0g>this thread</a> for some commit message conventions, discussion proposed by <a href=https://hashnode.com/@bolajiayodeji>@bolajiayodeji</a>.</p>
+<h3 id=6-general-rules>6 General Rules</h3>
+<ul>
+<li><strong>Capitalization and Punctuation</strong>: Capitalize the first word and do not end in punctuation.</li>
+<li><strong>Mood</strong>: Use the imperative mood in the subject line. Example: Add fix for dark mode toggle state.</li>
+<li><strong>Type of Commit</strong>: Specify the type of commit. It is recommended and can be even more beneficial to have a consistent set of words to describe your changes. Example: Bugfix, Update, Refactor, Bump, and so on.</li>
+<li><strong>Length</strong>: The first line should be no longer than 50 characters, and the body should be restricted to 72 characters.</li>
+<li><strong>Content</strong>: Be direct, try to cut filler words and phrases in these sentences. Examples: though, maybe, I think, kind of.</li>
+<li><strong>Issue Tracker</strong>: If you use an issue tracker, add a reference(s).</li>
+</ul>
+<h3 id=journalism-questions>Journalism Questions</h3>
+<p>When a journalist is writing an article they look to answer who, what, where, when, why, and how. It is similar when we are writing commit messages, we need to answer some questions about the changes.</p>
+<p>Sometimes it is not easy to put in words the changes that we made. To simplify that process and come up with thoughtful commits, consider the following &ldquo;journalism&rdquo; questions:</p>
+<ul>
+<li>Why are the changes necessary?</li>
+<li>How do changes address the issue?</li>
+<li>Why have I made these changes?</li>
+<li>What effect have my changes made?</li>
+<li>What side effects do the changes have?</li>
+<li>What are the changes in reference to?</li>
+</ul>
+<p>Answering these questions will help you to write a better commit message.</p>
+<h3 id=commit-message-template>Commit Message Template</h3>
+<p>I merged the <em>6 General Rules</em> with <em>Journalism Questions</em>, to have a well-format compact template:</p>
+<p><img src=images/git-message.png alt="Git Commit Message Template"></p>
+<p>Where:</p>
+<ul>
+<li><strong>issue|type:</strong> If you are using an issue tracker, set the reference(s), otherwise, set the commit type.</li>
+<li><strong>title:</strong> Issue name or a short summary of changes.</li>
+<li><strong>description:</strong> More detailed explanatory text, if necessary. It should answer the template&rsquo;s questions.</li>
+</ul>
+<p>The result is:</p>
+<p><img src=images/git-message-result.png alt="Git Commit Message Template"></p>
+<h4 id=git-configuration>Git Configuration</h4>
+<p>Templates can be added to your <strong><a href=https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration>Git Configuration</a></strong>, so every time you make a commit:</p>
+<p><code>$ git commit</code></p>
+<p>the commit message editor will display the template, and you only have to update it. To tell Git to use the template file (globally), you can use the following command:</p>
+<p><code>$ git config --global commit.template git-message-template.txt</code></p>
+<p>By default, Git uses whatever you’ve set as your default text editor to create and edit your commit and tag messages. To change that default to something else, you can use the <code>core.editor</code> setting:</p>
+<p><code>$ git config --global core.editor vim</code></p>
+<h2 id=conclusion>Conclusion</h2>
+<p>The most important part of a commit message is that it should be clear and meaningful. It helps you communicate and collaborate with your team.</p>
+<p>There is an existing set of agreed-upon standards you can follow. But, you can tweak the convention to get a more appropriate convention for your team or project.</p>
+<hr>
+<p>Thanks for reading! Let me know what you think in the comment section, don&rsquo;t forget to leave a ❤️ and share it within your network!</p>
+<p>Connect with me on Twitter <a href=https://twitter.com/sZalimben>@sZalimben</a>, and if you like my content you can <em><a href=https://www.buymeacoffee.com/szalimben>Buy Me a Coffe</a></em>.</p>
+<h2 id=resources>Resources</h2>
+<ul>
+<li><a href=https://www.conventionalcommits.org/en/v1.0.0/>Conventional Commits</a></li>
+<li><a href=https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/>How to Write Better Git Commit Messages – A Step-By-Step Guide</a></li>
+<li><a href=https://www.freecodecamp.org/news/how-to-use-commitlint-to-write-good-commit-messages/>How to Write Good Commit Messages with Commitlint</a></li>
+<li><a href=https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/>How to Write Good Commit Messages: A Practical Git Guide</a></li>
+<li><a href=https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration>Customizing Git - Git Configuration</a></li>
+</ul>
+</section>
+<section class=share-blog>
+<div id=end-blog-sign>
+Saúl Zalimben
+</div>
+<div id=end-blog-share-buttons class=share-buttons>
+<div id=twitter>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-via=szalimben data-show-count=false>
+Tweet
+</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+</div>
+<div id=linkedin>
+<script src=https://platform.linkedin.com/in.js type=text/javascript>LinkedIn</script>
+<script type=in/share data-url=https://zalimben.github.io/blog/english/posts/write-git-commit-message/></script>
+</div>
+<div id=bmc>
+<a href=https://www.buymeacoffee.com/szalimben target=_blank>
+<div class=bmc-button>
+<img src=images/bmc-logo.svg style=height:16px alt="Bue Me a Coffee">
+<span style=vertical-align:top> <strong> BMC </strong> </span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<script src=https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js></script>
+<script>addBackToTop({diameter:56,backgroundColor:'rgb(255, 82, 82)',textColor:'#fff'})</script>
+</article>
+</main>
+<footer class=footer>
+<p class=copyright>© 2022 Saúl Zalimben. <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>CC BY-NC-SA 4.0</a>.</p>
+<p class=powered-by>Powered by <a target=_blank href=https://gohugo.io/>Hugo</a> & <a target=_blank href=https://github.com/posquit0/hugo-awesome-identity>Awesome Identity</a>.</p>
+</footer>
+</body>
+</html>
