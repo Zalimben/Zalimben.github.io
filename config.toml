@@ -31,12 +31,11 @@ enableRobotsTXT = true
   firstname = "Saúl"
   lastname = "Zalimben"
   quote = "I try to learn from every experience, good or bad. - Tim Tebow"
-  title = "Software Engineer / Professor / Coffee Lover"
+  title = "Software Engineer | Professor | Coffee Lover"
   bio = """Current Senior Software Engineer at [**Software Natura**](https://swnat.com/), and Professor at [**FP-UNA**](https://www.pol.una.py/)
 
-  6+ years experience specializing in fullstack software development, mainly backend development.
-
-  Experienced in creating high-quality code considering the best coding practices, architectural patterns and performance, and leading small development teams.
+  Experienced in creating high-quality code considering the best coding practices, architectural patterns, and performance.
+  Experienced in leading small development teams using agile methodologies.
 
   Interested in devising a better problem-solving method for challenging tasks, and learning new technologies and tools if the need arises.
   """
