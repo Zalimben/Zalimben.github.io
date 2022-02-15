@@ -4,7 +4,7 @@ date: 2020-03-27
 draft: false
 author: Saúl Zalimben
 description: La estructura de datos es el elemento fundamental de la ciencia de computación, son un medio para manejar grandes cantidades de datos de manera eficiente.
-tags: ['spanish', 'español','principiante','fundamentos']
+tags: ['spanish', 'español','principiante','fundamentos', 'estructura de datos']
 blog_list_image: https://dev-to-uploads.s3.amazonaws.com/i/4c02moocan9xt9tk0zei.png
 author: Saúl Zalimben
 slug: estructura-datos
