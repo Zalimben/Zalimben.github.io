@@ -5,8 +5,7 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <base href=https://zalimben.github.io/>
-<title>Git Branch Strategy &mdash; Saúl Zalimben</title>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css>
+<title>Git Branch Strategy &mdash; Saúl Zalimben</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css>
 <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.7.2/css/all.css integrity=sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr crossorigin=anonymous>
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:100,700">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Jura:400,700">
@@ -14,7 +13,7 @@
 <link rel=icon type=image/png sizes=32x32 href=https://zalimben.github.io/images/favicon2.png>
 <link rel=icon type=image/png sizes=16x16 href=https://zalimben.github.io/images/favicon2.png>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FDLYCJTDV"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-2FDLYCJTDV',{anonymize_ip:!1})}</script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2FDLYCJTDV",{anonymize_ip:!1})}</script>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://zalimben.github.io/images/git-branch.png">
 <meta name=twitter:title content="Git Branch Strategy">
@@ -27,161 +26,70 @@
 <meta property="og:url" content="https://zalimben.github.io/blog/english/posts/git-branch-strategy/"><meta property="og:image" content="https://zalimben.github.io/images/git-branch.png"><meta property="article:section" content="blog">
 <meta property="article:published_time" content="2022-01-17T00:00:00+00:00">
 <meta property="article:modified_time" content="2022-01-21T03:00:40-03:00">
-</head>
-<body>
+</head><body>
 <header id=identity-header class="header sticky">
 <nav>
 <section class=menu>
 <ul>
 <li>
 <a href=https://zalimben.github.io/ class=menu>About Me</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/blog class="menu active">Blog</a>
-</li>
-<ul>
-</section>
-</nav>
-</header>
-<main class=wrap>
+</li><ul>
+</section></nav></header><main class=wrap>
 <article><div class=cover-image>
 <img style=transform:translateY(0%) src=https://zalimben.github.io/images/git-branch.png>
-</div>
-<div>
+</div><div>
 <h1 id=post-title class=post-title>
 Git Branch Strategy
-</h1>
-</div>
-<ul id=tags class=tags>
+</h1></div><ul id=tags class=tags>
 <li>
 <a href=https://zalimben.github.io/tags/git>#git</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/tags/version-control>#version control</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/tags/branching>#branching</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/tags/beginners>#beginners</a>
-</li>
-</ul>
-<h3 class=post-author>
+</li></ul><h3 class=post-author>
 Saúl Zalimben
-</h3>
-Posted on Jan 17, 2022
+</h3>Posted on Jan 17, 2022
 <b> | </b> Updated on Jan 21, 2022
 <b> | </b> 3 min read
 <hr>
 <section id=content class=markdown-body>
-<p>In this post, we will go over Git Branching Strategy and Git Workflows, it will not focus on comparing Git Branching Models, nor explain one by one since that story has been told more than once, but you will be able to find the links and examples in this post.</p>
-<p>If you&rsquo;re looking for a <em>Git Tutorial</em>, I recommend my previous post on it, <a href=blog/english/posts/git-explained>Git Explained by DEV Community</a>.</p>
-<hr>
-<h2 id=introduction>Introduction</h2>
-<p><a href=https://git-scm.com/doc>Git</a> has become the <em>de facto</em> standard for source control management. Branching is an essential feature of a <a href=https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control>VCS</a> (version control system), that allows developers to diverge from the main branch and continue their work on multiple feature branches in parallel, without affecting the main branch.</p>
-<blockquote>
-<p>Git does NOT enforce any particular branching strategy.</p>
-</blockquote>
-<p>Git allows teams to tweak Git Workflows, as it fits the team’s culture. As a result, teams and organizations are often required to choose a particular branching strategy that matches their release cadence, while optimizing productivity depending on their team size, strengths and weaknesses.</p>
-<p>Some Git Branching Models are the best in certain situations, but none can be considered the <em>&ldquo;best&rdquo;</em>, therefore, it is important to mention that there is no such thing as &ldquo;Best Git Branching Model&rdquo; or &ldquo;Best Git Workflow&rdquo; or &ldquo;Best Gitflow&rdquo; or any of its variations, but what you may find is <em>&ldquo;A successful Git branching model for X situation&rdquo;</em> which is true as Git Workflows are flexible and change as needed, so in certain situations, one Git Workflow is better than others, simple as that.</p>
-<blockquote>
-<p>There is no such thing as <em>&ldquo;Best Git Branching Model&rdquo;</em>.</p>
-</blockquote>
-<h2 id=git-workflows>Git Workflows</h2>
-<p>A Git Workflow is a recipe or recommendation for how to use Git to accomplish work in a consistent and productive manner and deal with the branching problem.</p>
-<blockquote>
-<p><strong>Gitflow is not Git Workflow</strong></p>
-<p>In some cases, the term Gitfow is used to refer to the actual Git Workflow used by a team or organization, but this is incorrect. A Git Workflow could be any of the Git Branching Strategies that the team or organization is using and a Gitflow is a type of Git Workflow.</p>
-</blockquote>
-<h3 id=git-branching-models>Git Branching Models</h3>
-<p>Here a list of some well-defined models:</p>
-<h4 id=git-commonflowhttpscommonfloworg><a href=https://commonflow.org/>Git Commonflow</a></h4>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uz3yevyu7g6akubo6gna.png alt=Commonflow></p>
-<h4 id=gitflowhttpsnviecompostsa-successful-git-branching-model><a href=https://nvie.com/posts/a-successful-git-branching-model/>Gitflow</a></h4>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v2ojn0uyvx96vuqa65j3.jpg alt=Gitflow></p>
-<h4 id=gitlab-flowhttpsaboutgitlabcomsolutionsgitlab-flow><a href=https://about.gitlab.com/solutions/gitlab-flow/>GitLab Flow</a></h4>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/39585l2n34br7xo3wd8q.jpg alt="GitLab Flow"></p>
-<h4 id=github-flowhttpsdocsgithubcomenget-startedquickstartgithub-flow><a href=https://docs.github.com/en/get-started/quickstart/github-flow>GitHub Flow</a></h4>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ecy82dtuqv34li88lrd6.png alt="GitHub Flow"></p>
-<h4 id=trunk-based-developmenthttpstrunkbaseddevelopmentcom><a href=https://trunkbaseddevelopment.com/>Trunk Based Development</a></h4>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/doaeef4dqbpm729w0vyi.png alt="Trunk Based Development"></p>
-<p>This post performs a <a href=https://dev.to/arbitrarybytes/comparing-git-branching-strategies-dl4>comparative analysis</a> of the three most popular branching strategies, namely, Git Flow, Trunk Based Development and GitHub Flow.</p>
-<h3 id=custom-git-branching-models>Custom Git Branching Models</h3>
-<p>There are also several custom Git Branching Models; In some cases, teams take a well-defined git workflow and modify it based on the needs of the project. Therefore, it is very common to find mutations of the git branching models mentioned above.</p>
-<h4 id=example-git-environment-branching-flowhttpsdevtopreethamsathyamurthygit-branching-and-branching-strategy-4mci>Example: <a href=https://dev.to/preethamsathyamurthy/git-branching-and-branching-strategy-4mci>Git Environment Branching Flow</a></h4>
-<p>This strategy focuses on branches per environment (development, staging and production), where each branch is restricted by rules.</p>
-<p>Initially, three branches are required: staging, develop and master (or main).</p>
-<table>
+<p>In this post, we will go over Git Branching Strategy and Git Workflows, it will not focus on comparing Git Branching Models, nor explain one by one since that story has been told more than once, but you will be able to find the links and examples in this post.</p><p>If you&rsquo;re looking for a <em>Git Tutorial</em>, I recommend my previous post on it, <a href=blog/english/posts/git-explained>Git Explained by DEV Community</a>.</p><hr>
+<h2 id=introduction>Introduction</h2><p><a href=https://git-scm.com/doc>Git</a> has become the <em>de facto</em> standard for source control management. Branching is an essential feature of a <a href=https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control>VCS</a> (version control system), that allows developers to diverge from the main branch and continue their work on multiple feature branches in parallel, without affecting the main branch.</p><blockquote>
+<p>Git does NOT enforce any particular branching strategy.</p></blockquote><p>Git allows teams to tweak Git Workflows, as it fits the team’s culture. As a result, teams and organizations are often required to choose a particular branching strategy that matches their release cadence, while optimizing productivity depending on their team size, strengths and weaknesses.</p><p>Some Git Branching Models are the best in certain situations, but none can be considered the <em>&ldquo;best&rdquo;</em>, therefore, it is important to mention that there is no such thing as &ldquo;Best Git Branching Model&rdquo; or &ldquo;Best Git Workflow&rdquo; or &ldquo;Best Gitflow&rdquo; or any of its variations, but what you may find is <em>&ldquo;A successful Git branching model for X situation&rdquo;</em> which is true as Git Workflows are flexible and change as needed, so in certain situations, one Git Workflow is better than others, simple as that.</p><blockquote>
+<p>There is no such thing as <em>&ldquo;Best Git Branching Model&rdquo;</em>.</p></blockquote><h2 id=git-workflows>Git Workflows</h2><p>A Git Workflow is a recipe or recommendation for how to use Git to accomplish work in a consistent and productive manner and deal with the branching problem.</p><blockquote>
+<p><strong>Gitflow is not Git Workflow</strong></p><p>In some cases, the term Gitfow is used to refer to the actual Git Workflow used by a team or organization, but this is incorrect. A Git Workflow could be any of the Git Branching Strategies that the team or organization is using and a Gitflow is a type of Git Workflow.</p></blockquote><h3 id=git-branching-models>Git Branching Models</h3><p>Here a list of some well-defined models:</p><h4 id=git-commonflowhttpscommonfloworg><a href=https://commonflow.org/>Git Commonflow</a></h4><p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uz3yevyu7g6akubo6gna.png alt=Commonflow></p><h4 id=gitflowhttpsnviecompostsa-successful-git-branching-model><a href=https://nvie.com/posts/a-successful-git-branching-model/>Gitflow</a></h4><p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v2ojn0uyvx96vuqa65j3.jpg alt=Gitflow></p><h4 id=gitlab-flowhttpsaboutgitlabcomsolutionsgitlab-flow><a href=https://about.gitlab.com/solutions/gitlab-flow/>GitLab Flow</a></h4><p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/39585l2n34br7xo3wd8q.jpg alt="GitLab Flow"></p><h4 id=github-flowhttpsdocsgithubcomenget-startedquickstartgithub-flow><a href=https://docs.github.com/en/get-started/quickstart/github-flow>GitHub Flow</a></h4><p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ecy82dtuqv34li88lrd6.png alt="GitHub Flow"></p><h4 id=trunk-based-developmenthttpstrunkbaseddevelopmentcom><a href=https://trunkbaseddevelopment.com/>Trunk Based Development</a></h4><p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/doaeef4dqbpm729w0vyi.png alt="Trunk Based Development"></p><p>This post performs a <a href=https://dev.to/arbitrarybytes/comparing-git-branching-strategies-dl4>comparative analysis</a> of the three most popular branching strategies, namely, Git Flow, Trunk Based Development and GitHub Flow.</p><h3 id=custom-git-branching-models>Custom Git Branching Models</h3><p>There are also several custom Git Branching Models; In some cases, teams take a well-defined git workflow and modify it based on the needs of the project. Therefore, it is very common to find mutations of the git branching models mentioned above.</p><h4 id=example-git-environment-branching-flowhttpsdevtopreethamsathyamurthygit-branching-and-branching-strategy-4mci>Example: <a href=https://dev.to/preethamsathyamurthy/git-branching-and-branching-strategy-4mci>Git Environment Branching Flow</a></h4><p>This strategy focuses on branches per environment (development, staging and production), where each branch is restricted by rules.</p><p>Initially, three branches are required: staging, develop and master (or main).</p><table>
 <thead>
 <tr>
-<th>Branch</th>
-<th>Environment</th>
-</tr>
-</thead>
-<tbody>
+<th>Branch</th><th>Environment</th></tr></thead><tbody>
 <tr>
-<td>develop</td>
-<td>Development</td>
-</tr>
-<tr>
-<td>staging</td>
-<td>Staging</td>
-</tr>
-<tr>
-<td>master</td>
-<td>Production</td>
-</tr>
-</tbody>
-</table>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w96pg7r5kaeabhboeutz.jpg alt="Git Environment Branching Flow"></p>
-<h2 id=conclusion>Conclusion</h2>
-<p>There is <a href=https://www.researchgate.net/publication/220477127_No_Silver_Bullet_Essence_and_Accidents_of_Software_Engineering>No Silver Bullet</a> for Git Branching, each strategy has a list of pros and cons. Choosing the &ldquo;best&rdquo; requires researching the well-defined models and the needs of the project, and checking if the model covers all you need or maybe a custom model based on a well-defined.</p>
-<p>Also, it is okay to make mistakes when selecting the correct model, if that happens remember you can always modify the current strategy or move to another one, Git allows that.</p>
-<hr>
-<p>If you like this article, don&rsquo;t forget to share it within your network.</p>
-<h2 id=references>References</h2>
-<ul>
-<li><a href=https://git-scm.com/doc>Git Docs</a></li>
-<li><a href=https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control>Version Control System</a></li>
-<li><a href=https://www.researchgate.net/publication/220477127_No_Silver_Bullet_Essence_and_Accidents_of_Software_Engineering>No Silver Bullet</a></li>
-<li><a href=https://dev.to/arbitrarybytes/comparing-git-branching-strategies-dl4>Comparing Git Branching Strategies</a></li>
-<li><a href=https://dev.to/preethamsathyamurthy/git-branching-and-branching-strategy-4mci>Git Branching and Branching Strategy</a></li>
-<li><a href=https://build5nines.com/introduction-to-git-version-control-workflow/>Introduction to Git Version Control Workflow</a></li>
-<li><a href=https://dev.to/andou/yagbw-yet-another-git-branching-workflow-hf4>YAGBW - Yet Another Git Branching Workflow</a></li>
-</ul>
-</section>
-<section class=share-blog>
+<td>develop</td><td>Development</td></tr><tr>
+<td>staging</td><td>Staging</td></tr><tr>
+<td>master</td><td>Production</td></tr></tbody></table><p><img src=https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w96pg7r5kaeabhboeutz.jpg alt="Git Environment Branching Flow"></p><h2 id=conclusion>Conclusion</h2><p>There is <a href=https://www.researchgate.net/publication/220477127_No_Silver_Bullet_Essence_and_Accidents_of_Software_Engineering>No Silver Bullet</a> for Git Branching, each strategy has a list of pros and cons. Choosing the &ldquo;best&rdquo; requires researching the well-defined models and the needs of the project, and checking if the model covers all you need or maybe a custom model based on a well-defined.</p><p>Also, it is okay to make mistakes when selecting the correct model, if that happens remember you can always modify the current strategy or move to another one, Git allows that.</p><hr>
+<p>If you like this article, don&rsquo;t forget to share it within your network.</p><h2 id=references>References</h2><ul>
+<li><a href=https://git-scm.com/doc>Git Docs</a></li><li><a href=https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control>Version Control System</a></li><li><a href=https://www.researchgate.net/publication/220477127_No_Silver_Bullet_Essence_and_Accidents_of_Software_Engineering>No Silver Bullet</a></li><li><a href=https://dev.to/arbitrarybytes/comparing-git-branching-strategies-dl4>Comparing Git Branching Strategies</a></li><li><a href=https://dev.to/preethamsathyamurthy/git-branching-and-branching-strategy-4mci>Git Branching and Branching Strategy</a></li><li><a href=https://build5nines.com/introduction-to-git-version-control-workflow/>Introduction to Git Version Control Workflow</a></li><li><a href=https://dev.to/andou/yagbw-yet-another-git-branching-workflow-hf4>YAGBW - Yet Another Git Branching Workflow</a></li></ul></section><section class=share-blog>
 <div id=end-blog-sign>
 Saúl Zalimben
-</div>
-<div id=end-blog-share-buttons class=share-buttons>
+</div><div id=end-blog-share-buttons class=share-buttons>
 <div id=twitter>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-via=szalimben data-show-count=false>
 Tweet
 </a>
 <script async src=https://platform.twitter.com/widgets.js></script>
-</div>
-<div id=linkedin>
+</div><div id=linkedin>
 <script src=https://platform.linkedin.com/in.js type=text/javascript>LinkedIn</script>
 <script type=in/share data-url=https://zalimben.github.io/blog/english/posts/git-branch-strategy/></script>
-</div>
-<div id=bmc>
+</div><div id=bmc>
 <a href=https://www.buymeacoffee.com/szalimben target=_blank>
 <div class=bmc-button>
 <img src=images/bmc-logo.svg style=height:16px alt="Bue Me a Coffee">
 <span style=vertical-align:top> <strong> BMC </strong> </span>
-</div>
-</a>
-</div>
-</div>
-</section>
-<script src=https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js></script>
-<script>addBackToTop({diameter:56,backgroundColor:'rgb(255, 82, 82)',textColor:'#fff'})</script>
-</article>
-</main>
-<footer class=footer>
-<p class=copyright>© 2022 Saúl Zalimben. <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>CC BY-NC-SA 4.0</a>.</p>
-<p class=powered-by>Powered by <a target=_blank href=https://gohugo.io/>Hugo</a> & <a target=_blank href=https://github.com/posquit0/hugo-awesome-identity>Awesome Identity</a>.</p>
-</footer>
-</body>
-</html>
+</div></a>
+</div></div></section><script src=https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js></script>
+<script>addBackToTop({diameter:56,backgroundColor:"rgb(255, 82, 82)",textColor:"#fff"})</script>
+</article></main><footer class=footer>
+<p class=copyright>© 2022 Saúl Zalimben. <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>CC BY-NC-SA 4.0</a>.</p><p class=powered-by>Powered by <a target=_blank href=https://gohugo.io/>Hugo</a> & <a target=_blank href=https://github.com/posquit0/hugo-awesome-identity>Awesome Identity</a>.</p></footer></body></html>

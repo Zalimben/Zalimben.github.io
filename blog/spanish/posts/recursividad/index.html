@@ -5,8 +5,7 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <base href=https://zalimben.github.io/>
-<title>Recursividad &mdash; Saúl Zalimben</title>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css>
+<title>Recursividad &mdash; Saúl Zalimben</title><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css>
 <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.7.2/css/all.css integrity=sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr crossorigin=anonymous>
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:100,700">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Jura:400,700">
@@ -14,7 +13,7 @@
 <link rel=icon type=image/png sizes=32x32 href=https://zalimben.github.io/images/favicon2.png>
 <link rel=icon type=image/png sizes=16x16 href=https://zalimben.github.io/images/favicon2.png>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FDLYCJTDV"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-2FDLYCJTDV',{anonymize_ip:!1})}</script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2FDLYCJTDV",{anonymize_ip:!1})}</script>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://dev-to-uploads.s3.amazonaws.com/i/gtii7l9u8jy8m5qtolrh.jpg">
 <meta name=twitter:title content="Recursividad">
@@ -27,139 +26,68 @@
 <meta property="og:url" content="https://zalimben.github.io/blog/spanish/posts/recursividad/"><meta property="og:image" content="https://dev-to-uploads.s3.amazonaws.com/i/gtii7l9u8jy8m5qtolrh.jpg"><meta property="article:section" content="blog">
 <meta property="article:published_time" content="2020-05-03T00:00:00+00:00">
 <meta property="article:modified_time" content="2022-01-21T03:00:40-03:00">
-</head>
-<body>
+</head><body>
 <header id=identity-header class="header sticky">
 <nav>
 <section class=menu>
 <ul>
 <li>
 <a href=https://zalimben.github.io/ class=menu>About Me</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/blog class="menu active">Blog</a>
-</li>
-<ul>
-</section>
-</nav>
-</header>
-<main class=wrap>
+</li><ul>
+</section></nav></header><main class=wrap>
 <article><div class=cover-image>
 <img style=transform:translateY(-15%) src=https://dev-to-uploads.s3.amazonaws.com/i/gtii7l9u8jy8m5qtolrh.jpg>
-</div>
-<div>
+</div><div>
 <h1 id=post-title class=post-title>
 Recursividad
-</h1>
-</div>
-<ul id=tags class=tags>
+</h1></div><ul id=tags class=tags>
 <li>
 <a href=https://zalimben.github.io/tags/spanish>#spanish</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/tags/espa%C3%B1ol>#español</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/tags/principiante>#principiante</a>
-</li>
-<li>
+</li><li>
 <a href=https://zalimben.github.io/tags/fundamentos>#fundamentos</a>
-</li>
-</ul>
-<h3 class=post-author>
+</li></ul><h3 class=post-author>
 Saúl Zalimben
-</h3>
-Posted on May 3, 2020
+</h3>Posted on May 3, 2020
 <b> | </b> Updated on Jan 21, 2022
 <b> | </b> 4 min read
 <hr>
 <section id=content class=markdown-body>
 <blockquote>
-<p>Iterar es humano, recursivar es divino</p>
-</blockquote>
-<p><strong>Recurrencia</strong>, <strong>recursión</strong> o <strong>recursividad</strong> es la forma en la cual se especifica un proceso basado en su propia definición, por ejemplo las muñecas rusas, si las vemos como procesos podemos observar que cada una contiene una instancia más pequeña de sí misma.
-En ciencias de la computación, se la utiliza como herramienta para solucionar dichos problemas, que se encuentran definidos en términos iterativos.</p>
-<h3 id=algoritmos-iterativos>Algoritmos iterativos</h3>
-<p>Recordando que un algoritmo es la secuencia de instrucciones que realizadas en orden conducen a obtener la solución de un problema, cuando existen problemas que se encuentran definidos en torno a sí mismos, se utilizan ciclos iterativos que consiste en repetir una instrucción muchas veces sin escribir código una y otra vez.</p>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/i/rkqm6zouu47fv8tgogx8.png alt=Iteración></p>
-<p>Donde cada iteración resuelve una instancia más pequeña del problema hasta el punto que el problema ya no pueda dividirse.</p>
-<h3 id=algoritmos-recursivos>Algoritmos recursivos</h3>
-<p>Para resolver estos problemas, también se puede optar por utilizar algoritmos recursivos, realizando llamadas iterativas a la misma función.</p>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/i/68ihr48kcb6qhyvc5w6e.png alt=Recursividad></p>
-<p>La definición de recursividad debe incluir un conjunto de condiciones para que la recursión sea exitosa:</p>
-<ul>
-<li>Un <strong>componente base</strong> o <strong>caso base</strong>, es decir, una condición de salida de la iteración, una instancia del problema que pueda ser resuelta sin recursión.</li>
-</ul>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/i/8rxi0dtalsm8dx0jwfkp.png alt="Componente Base"></p>
-<ul>
-<li>Toda llamada recursiva debe realizar algún progreso hacia el caso base.</li>
-</ul>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/i/dplzexzpbavbvgasre86.png alt="Camino al caso base"></p>
-<ul>
-<li>&ldquo;Siempre debemos asumir que la recursión funciona&rdquo;</li>
-<li>Nunca duplicar la tarea resolviendo la misma instancia del problema de forma recursiva.</li>
-</ul>
-<p>Si bien los dos primeros puntos son suficientes, el tercer punto cobra sentido cuando se trata con problemas grandes, compuestos de muchas instancias y que hace casi imposible de seguir el rastro.
-Mientras que el último punto, está ligado a la optimización de la recursión, con el fin de evitar resolver la misma instancia del problema gastanto recursos de forma innecesaria.</p>
-<p>Un ejemplo clásico para entender la recursión es calcular el factorial de un número <em>n</em>.</p>
-<h4 id=ejemplo-factorial>Ejemplo: Factorial</h4>
-<blockquote>
-<p>El factorial es el producto de todos los números enteros positivos desde 1 hasta n, y se define como <em>factorial(n) = n!</em>.</p>
-</blockquote>
-<blockquote>
-<p>Entonces, factorial(5) = 5! = 5 * 4 * 3 * 2 * 1 = 120</p>
-</blockquote>
-<p>Se observa que existe un ciclo iterativo constante, donde cada llamada resuelve una instancia más pequeña del problema.</p>
-<blockquote>
-<p>factorial(n) = n * factorial(n - 1)</p>
-</blockquote>
-<p><img src=https://dev-to-uploads.s3.amazonaws.com/i/k4ofjzxixq6gut765evq.png alt=Factorial></p>
-<p>En la imagen se observa como se realizan las llamadas recursivas, resolviendo instancias más pequeñas del problema en cada paso hasta llegar al caso base de factorial, <em>factorial(1) = 1! = 1</em>.</p>
-<h4 id=ventaja--desventaja>Ventaja & Desventaja</h4>
-<p>Una importante ventaja es que el código luce más prolijo y elegante, al mismo tiempo que se escribe menos para resolver el mismo problema.
-Pero como principal desventaja se encuentra el tiempo de llamada a la función, puesto que se consume tiempo de procesamiento y en simultáneo espacio de almacenamiento extra por cada llamada, ya que se necesita guardar el resultado de cada recursión junto con los parámetros que son enviados en cada instancia del problema.</p>
-<h3 id=reflexiones-finales>Reflexiones finales</h3>
-<p>Si bien la recursión ayuda a resolver problemas de forma elegante y prolija, es importante mencionar que cualquier problema que se pueda resolver de forma recursiva, también se puede resolver de forma iterativa, esto significa que no se debe utilizar recursión para sustituir iteraciones simples.</p>
-<p>No se debe pensar que la recursión es la mejor herramienta para resolver todos los problemas iterativos, ya que existen problemas que no pueden resolverse de forma recursiva, pero si iterativa o que la complejidad es menor de forma iterativa que recursiva, es por ello que siempre se debe analizar el problema en cuestión con el fin de entender su naturaleza y seleccionar la mejor herramienta para resolverlo.</p>
-<h3 id=referencias>Referencias</h3>
-<ul>
-<li>Weiss, Mark Allen (2010). Recursion. Data structures & problem solving using Java (pp. 293 - 351). Fourth edition. Addison-Wesley</li>
-<li>Aguilar Joyanes, Luis (2008). Recursividad. Fundamentos De Programación. Algoritmos, estructura de datos y objetos (pp. 519 - 550). Cuarta edición. McGraw-Hill.</li>
-<li>Shaffer, Clifford A. (2010). Mathematical Preliminaries. A Practical Introduction to Data Structures and Algorithm Analysis. (Java Version) (pp. 36 – 46). Third Edition.</li>
-</ul>
-</section>
-<section class=share-blog>
+<p>Iterar es humano, recursivar es divino</p></blockquote><p><strong>Recurrencia</strong>, <strong>recursión</strong> o <strong>recursividad</strong> es la forma en la cual se especifica un proceso basado en su propia definición, por ejemplo las muñecas rusas, si las vemos como procesos podemos observar que cada una contiene una instancia más pequeña de sí misma.
+En ciencias de la computación, se la utiliza como herramienta para solucionar dichos problemas, que se encuentran definidos en términos iterativos.</p><h3 id=algoritmos-iterativos>Algoritmos iterativos</h3><p>Recordando que un algoritmo es la secuencia de instrucciones que realizadas en orden conducen a obtener la solución de un problema, cuando existen problemas que se encuentran definidos en torno a sí mismos, se utilizan ciclos iterativos que consiste en repetir una instrucción muchas veces sin escribir código una y otra vez.</p><p><img src=https://dev-to-uploads.s3.amazonaws.com/i/rkqm6zouu47fv8tgogx8.png alt=Iteración></p><p>Donde cada iteración resuelve una instancia más pequeña del problema hasta el punto que el problema ya no pueda dividirse.</p><h3 id=algoritmos-recursivos>Algoritmos recursivos</h3><p>Para resolver estos problemas, también se puede optar por utilizar algoritmos recursivos, realizando llamadas iterativas a la misma función.</p><p><img src=https://dev-to-uploads.s3.amazonaws.com/i/68ihr48kcb6qhyvc5w6e.png alt=Recursividad></p><p>La definición de recursividad debe incluir un conjunto de condiciones para que la recursión sea exitosa:</p><ul>
+<li>Un <strong>componente base</strong> o <strong>caso base</strong>, es decir, una condición de salida de la iteración, una instancia del problema que pueda ser resuelta sin recursión.</li></ul><p><img src=https://dev-to-uploads.s3.amazonaws.com/i/8rxi0dtalsm8dx0jwfkp.png alt="Componente Base"></p><ul>
+<li>Toda llamada recursiva debe realizar algún progreso hacia el caso base.</li></ul><p><img src=https://dev-to-uploads.s3.amazonaws.com/i/dplzexzpbavbvgasre86.png alt="Camino al caso base"></p><ul>
+<li>&ldquo;Siempre debemos asumir que la recursión funciona&rdquo;</li><li>Nunca duplicar la tarea resolviendo la misma instancia del problema de forma recursiva.</li></ul><p>Si bien los dos primeros puntos son suficientes, el tercer punto cobra sentido cuando se trata con problemas grandes, compuestos de muchas instancias y que hace casi imposible de seguir el rastro.
+Mientras que el último punto, está ligado a la optimización de la recursión, con el fin de evitar resolver la misma instancia del problema gastanto recursos de forma innecesaria.</p><p>Un ejemplo clásico para entender la recursión es calcular el factorial de un número <em>n</em>.</p><h4 id=ejemplo-factorial>Ejemplo: Factorial</h4><blockquote>
+<p>El factorial es el producto de todos los números enteros positivos desde 1 hasta n, y se define como <em>factorial(n) = n!</em>.</p></blockquote><blockquote>
+<p>Entonces, factorial(5) = 5! = 5 * 4 * 3 * 2 * 1 = 120</p></blockquote><p>Se observa que existe un ciclo iterativo constante, donde cada llamada resuelve una instancia más pequeña del problema.</p><blockquote>
+<p>factorial(n) = n * factorial(n - 1)</p></blockquote><p><img src=https://dev-to-uploads.s3.amazonaws.com/i/k4ofjzxixq6gut765evq.png alt=Factorial></p><p>En la imagen se observa como se realizan las llamadas recursivas, resolviendo instancias más pequeñas del problema en cada paso hasta llegar al caso base de factorial, <em>factorial(1) = 1! = 1</em>.</p><h4 id=ventaja--desventaja>Ventaja & Desventaja</h4><p>Una importante ventaja es que el código luce más prolijo y elegante, al mismo tiempo que se escribe menos para resolver el mismo problema.
+Pero como principal desventaja se encuentra el tiempo de llamada a la función, puesto que se consume tiempo de procesamiento y en simultáneo espacio de almacenamiento extra por cada llamada, ya que se necesita guardar el resultado de cada recursión junto con los parámetros que son enviados en cada instancia del problema.</p><h3 id=reflexiones-finales>Reflexiones finales</h3><p>Si bien la recursión ayuda a resolver problemas de forma elegante y prolija, es importante mencionar que cualquier problema que se pueda resolver de forma recursiva, también se puede resolver de forma iterativa, esto significa que no se debe utilizar recursión para sustituir iteraciones simples.</p><p>No se debe pensar que la recursión es la mejor herramienta para resolver todos los problemas iterativos, ya que existen problemas que no pueden resolverse de forma recursiva, pero si iterativa o que la complejidad es menor de forma iterativa que recursiva, es por ello que siempre se debe analizar el problema en cuestión con el fin de entender su naturaleza y seleccionar la mejor herramienta para resolverlo.</p><h3 id=referencias>Referencias</h3><ul>
+<li>Weiss, Mark Allen (2010). Recursion. Data structures & problem solving using Java (pp. 293 - 351). Fourth edition. Addison-Wesley</li><li>Aguilar Joyanes, Luis (2008). Recursividad. Fundamentos De Programación. Algoritmos, estructura de datos y objetos (pp. 519 - 550). Cuarta edición. McGraw-Hill.</li><li>Shaffer, Clifford A. (2010). Mathematical Preliminaries. A Practical Introduction to Data Structures and Algorithm Analysis. (Java Version) (pp. 36 – 46). Third Edition.</li></ul></section><section class=share-blog>
 <div id=end-blog-sign>
 Saúl Zalimben
-</div>
-<div id=end-blog-share-buttons class=share-buttons>
+</div><div id=end-blog-share-buttons class=share-buttons>
 <div id=twitter>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-via=szalimben data-show-count=false>
 Tweet
 </a>
 <script async src=https://platform.twitter.com/widgets.js></script>
-</div>
-<div id=linkedin>
+</div><div id=linkedin>
 <script src=https://platform.linkedin.com/in.js type=text/javascript>LinkedIn</script>
 <script type=in/share data-url=https://zalimben.github.io/blog/spanish/posts/recursividad/></script>
-</div>
-<div id=bmc>
+</div><div id=bmc>
 <a href=https://www.buymeacoffee.com/szalimben target=_blank>
 <div class=bmc-button>
 <img src=images/bmc-logo.svg style=height:16px alt="Bue Me a Coffee">
 <span style=vertical-align:top> <strong> BMC </strong> </span>
-</div>
-</a>
-</div>
-</div>
-</section>
-<script src=https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js></script>
-<script>addBackToTop({diameter:56,backgroundColor:'rgb(255, 82, 82)',textColor:'#fff'})</script>
-</article>
-</main>
-<footer class=footer>
-<p class=copyright>© 2022 Saúl Zalimben. <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>CC BY-NC-SA 4.0</a>.</p>
-<p class=powered-by>Powered by <a target=_blank href=https://gohugo.io/>Hugo</a> & <a target=_blank href=https://github.com/posquit0/hugo-awesome-identity>Awesome Identity</a>.</p>
-</footer>
-</body>
-</html>
+</div></a>
+</div></div></section><script src=https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js></script>
+<script>addBackToTop({diameter:56,backgroundColor:"rgb(255, 82, 82)",textColor:"#fff"})</script>
+</article></main><footer class=footer>
+<p class=copyright>© 2022 Saúl Zalimben. <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>CC BY-NC-SA 4.0</a>.</p><p class=powered-by>Powered by <a target=_blank href=https://gohugo.io/>Hugo</a> & <a target=_blank href=https://github.com/posquit0/hugo-awesome-identity>Awesome Identity</a>.</p></footer></body></html>
