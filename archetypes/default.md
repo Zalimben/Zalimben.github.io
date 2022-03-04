@@ -11,12 +11,9 @@ slug: {{ replace .Name "_" "-" }}
 idiom: 
 ---
 
+
 ---
-<!-- 
-## New Cool Posts
 
-{{ range first 10 ( where .Site.RegularPages "Type" "cool" ) }}
-* [{{ .Title }}](blog/english/posts/{{.Filename}}) de este artículo.
-{{ end }} 
+¡Gracias por leer! 
 
- -->
+Ponte en contacto en Twitter [@sZalimben](https://twitter.com/sZalimben), y si te gusta mi contenido puedes realizar una donación *[invitándome un café](https://www.buymeacoffee.com/szalimben)*.
