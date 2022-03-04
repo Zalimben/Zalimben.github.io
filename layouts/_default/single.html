@@ -31,7 +31,7 @@
     </h3>
         Posted on {{.PublishDate.Format "Jan 2, 2006" }} 
         {{ if .Lastmod.After .PublishDate }}
-        <b> |               </b> Updated on {{ .Lastmod.Format "Jan 2, 2006" }} 
+        <b> | </b> Updated on {{ .Lastmod.Format "Jan 2, 2006" }} 
         {{ end }}
         <b> | </b> {{.ReadingTime }} min read
     <hr>
