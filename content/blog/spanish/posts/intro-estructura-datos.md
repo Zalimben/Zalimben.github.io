@@ -20,7 +20,7 @@ Las estructuras de datos son el elemento fundamental de la computación, son con
 
 ## Preliminares
 ### Tipo
-Un tipo es un conjunto de valores que puede poseer una variable, por ejemplo una variable del tipo booleano puede contener dos posibles valores, falso o verdadero, o bien una variable del tipo entero, como lo define su nombre son todos los números enteros _P(Z)_.
+Un tipo es un conjunto de valores que puede poseer una variable, por ejemplo una variable del tipo booleano puede contener dos posibles valores, falso o verdadero, o bien una variable del tipo entero, que puede tomar el valor de todos los números enteros.
 
 ### Tipo de Dato
 Un Tipo de Dato es un tipo junto a todas las operaciones elementales que manipulan dicho tipo, un conjunto de funciones básicas que uno puede aplicar a estos valores, _e.g._ para los números enteros se pueden aplicar las operaciones básicas de la aritmética (suma, resta, multiplicación y división).
@@ -45,6 +45,8 @@ En cada lenguaje de programación, se implementan los TDA utilizando diferentes 
 
 
 ![Estructura de Datos](images/datos.svg)
+
+Ejemplos de Estructuras de Datos
 
 ---
 ¡Gracias por leer! 

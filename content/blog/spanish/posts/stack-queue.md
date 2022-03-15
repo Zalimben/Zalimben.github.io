@@ -1,14 +1,14 @@
 ---
 title: "Pilas y Colas"
-date: 2022-03-15T10:36:20-03:00
-draft: true
-description: ""
+date: 2022-03-15
+draft: false
+description: "Las pilas y colas son estructuras de datos lineales, donde existen restricciones para insertar y eliminar elementos."
 tags: ['spanish', 'español','fundamentos', 'estructura de datos']
 images: ['images/stack-queue/stackAndQueue.svg']
 transform: -16%
 blog_list_image: images/stack-queue/stackAndQueue.svg
 author: Saúl Zalimben
-slug: pilas-colas
+slug: stack-queue
 idiom: Español
 ---
 
@@ -16,7 +16,7 @@ Si acabas de encontrar esta publicación, antes de continuar te recomiendo que l
 
 ---
 
-Las pilas y colas son estructuras de datos lineales, donde existen restricciones para insertar y eliminar elementos. Son casos particulares de la estructura lista, y se pueden implementar mediante vectores y mediante listas enlazadas.
+Las pilas y colas son estructuras de datos lineales, donde existen restricciones para insertar y eliminar elementos. Son casos particulares de la estructura lista, y se pueden implementar mediante vectores o listas enlazadas.
 
 ### Operaciones elementales sobre Pilas y Colas
 - Insertar: Push -> apilar (Pila), Queue -> encolar (Cola)
@@ -34,7 +34,7 @@ Una **Cola o Queue** es un caso particular de la lista donde la inserción y eli
 
 Este comportamiento está basado en el principio _"primero en entrar, primero en salir"_, también conocido como **FIFO**, por su nombre en inglés _"first-in, first-out"_, que dicta que el primer elemento que fue añadido a la cola será el primero en ser removido.
 
-![Pila](images/stack-queue/queue.svg)
+![Cola](images/stack-queue/queue.svg)
 
 ---
 
