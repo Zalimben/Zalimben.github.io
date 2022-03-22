@@ -6,6 +6,7 @@ description: "Los árboles son estructuras de datos no lineales, donde cada elem
 tags: ['spanish', 'español','fundamentos', 'estructura de datos']
 images: ['images/tree/tree-double-example.svg', 'images/tree/tree-example.svg']
 transform: -3%
+width: 70%
 blog_list_image: images/tree/tree-example.svg
 author: Saúl Zalimben
 slug: tree
