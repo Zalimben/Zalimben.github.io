@@ -1,7 +1,7 @@
 ---
 title: "Grafos"
-date: 2022-03-22T00:36:53-03:00
-draft: true
+date: 2022-03-30T00:36:53-03:00
+draft: false
 description: "Son estructuras de datos no lineales, utilizadas para representar datos adyacentes."
 tags: ['spanish', 'español','fundamentos', 'estructura de datos']
 images: ['images/graph/graph-bucle.svg']
@@ -24,12 +24,12 @@ Los **grafos** son estructuras de datos no lineales, utilizadas para representar
 >
 
 Un grafo _G_ es un par ordenado _G = (V,E)_, donde:
-- _V_ es un conjunto de vértices o nodos _V=\{v<sub>1</sub>, v<sub>2</sub>, ... , v<sub>n</sub>\}_, y 
+- _V_ es un conjunto de vértices o nodos _V = \{v<sub>1</sub>, v<sub>2</sub>, ... , v<sub>n</sub>\}_, y 
 - _E_ es un conjunto de aristas o arcos 
     _E = \{\{v<sub>1</sub>, v<sub>2</sub>\},\{v<sub>2</sub>, v<sub>4</sub>\} ... , \{v<sub>m</sub>, v<sub>n</sub>\}\}_, que relacionan los nodos.
 
 
-![Ejemplo de Grafo](images/graph/graph-bucle.svg)
+![Ejemplo de Grafo](images/graph/gra.svg)
 
 Un grafo no contempla las restricciones que existen para los árboles, es decir, no existe un máximo de nodos que pueden apuntar al mismo nodo, se los puede ver como una generalización de la estructura del tipo árbol.
 
@@ -51,14 +51,23 @@ Existen muchas analogías en el mundo real, la red de rutas de un país, la red 
 - Un **grafo vacío** es de orden cero.
 - El **grado** de un vértice se define como el número de vértices adyacentes que tiene el vértice.
 - En grafos dirigidos el **grado de entrada** de un vértice o nodo _V_ es igual al número de arcos que lo tienen como extremo, es decir, igual al número de vértices adyacentes que tiene el vértice. Mientras que el **grado de salida** es el número de vértices adyacentes a un vértice dado.
+
+![Ejemplo de grados en un grafo](images/graph/graph-grado-1.svg)
+> Ejemplo de Grados en Grafos Dirigidos
+
+![Ejemplo de grados en un grafo](images/graph/graph-grado-2.svg)
+> Ejemplo de Grados en Grafos No Dirigidos
+
+
 - Dos o más arcos son **paralelas** si relacionan el mismo par de vértices.
 - Se dice que dos vértices son **adyacentes** si existe un arco entre ambos vértices. Si el arco es **{K, L}**, entonces, K es adyacente a L, y L es adyacente a K.
-- Un **camino** es una secuencia ordenada de vértices _\{v<sub>0</sub>, v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub>\}_. Se conoce como el camino desde _v<sub>0</sub>_ hasta _v<sub>n</sub>_
+- Un **camino** es una secuencia ordenada de vértices _\{v<sub>0</sub>, v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub>\}_, también se conoce como el camino desde _v<sub>0</sub>_ hasta _v<sub>n</sub>_.
 - Un **camino simple** no tiene vértices repetidos excepto para el primer y último vértice.
-- Si un camino simple donde el primer y último vértice son iguales se conoce como un **ciclo o bucle**, es decir, un arco que relaciona al mismo nodo.
+- Si en un camino simple, el primer y último vértice son iguales se conoce como un **ciclo o bucle**, es decir, un arco que relaciona al mismo nodo.
 
-![Ejemplo de grados en un grafo](images/graph/graph-grado.svg)
 
+![Ejemplo de grafo con bucle](images/graph/graph-bucle.svg)
+> Ejemplo de Grafo con Bucle
 
 ## Clasificación de Grafos
 Los grafos pueden clasificarse acorde a sus propiedades, según su estructura, dirección y conectividad.
@@ -70,23 +79,33 @@ Un grafo _G_ se denomina **sencillo** si se cumplen las siguientes condiciones:
 
 Un grafo que no es sencillo se denomina grafo **múltiple**.
 
-![Grafo con bucle](images/graph/graph-bucle.svg)
-
-
 ### Dirigido y No Dirigido
 La teoría de grafos considera los siguientes tipos de grafos según su dirección:
 
 - **Dirigidos**, los vértices apuntan unos a otros; los arcos están dirigidos o tienen dirección, si existe un arco _\{v<sub>i</sub>, v<sub>j</sub>\}_, entonces se dice que existe un camino de _v<sub>i</sub>_ a _v<sub>j</sub>_, pero esto no implica que existe un camino de _v<sub>j</sub>_ a _v<sub>i</sub>_.
 - **No Dirigidos**, los vértices están relacionados, pero no se apuntan unos a otros, si existe un arco _\{v<sub>i</sub>, v<sub>j</sub>\}_, entonces se dice que existe un camino de _v<sub>i</sub>_ a _v<sub>j</sub>_ y de _v<sub>j</sub>_ a _v<sub>i</sub>_ para cualquier par de vértices _v<sub>i</sub>_, _v<sub>j</sub>_.
 
-![Grafo con bucle](images/graph/graph-no-dirigido.svg)
+![Grafo Dirigido](images/graph/graph.svg)
+> Ejemplo de Grafo Dirigido
+
+![Grafo No Dirigido](images/graph/graph-no-dirigido.svg)
+> Ejemplo de Grafo No Dirigido
 
 ### Conexo y No Conexo
 Finalmente, según la conectividad de los grafos, estos pueden ser:
 - **Conexo o conectado**, si existe siempre un camino que une cualquier par de vértices, todos sus vértices están conectados por un camino. Se dice que un grafo es **fuertemente conexo** cuando es un grafo dirigido tal que para cualquier par de nodos existe un camino que los une.
+
+![Grafo Conexo](images/graph/graph-conexo.svg)
+> Ejemplo de Grafo Conexo
+
+![Grafo Fuertemente Conexo](images/graph/graph-fuertemente-conexo.svg)
+> Ejemplo de Grafo Fuertemente Conexo
+
 - **No Conexo o desconectado**, existen vértices que no están unidos por un camino.
 
-![Grafo con bucle](images/graph/graph-conexo.svg)
+
+![Grafo No Conexo](images/graph/graph-no-conexo.svg)
+> Ejemplo de Grafo No Conexo
 
 ### Completos, Dispersos y Densos
 
@@ -100,9 +119,10 @@ Un grafo donde las aristas no tienen costos o pesos asociados se conoce como gra
 como un grafo con pesos donde cada arista tiene un peso igual a 1.
 
 La longitud de un camino en un grafo con pesos es la suma de los pesos de todas las aristas que componen el camino.
-Por ejemplo, la siguiente figura ilustra la longitud del camino $(1, 4, 7)$ donde $(1-4)$ = 5,1 + $(4-7)$ 3,7 = 8,8
+Por ejemplo, la siguiente figura ilustra la longitud del camino _(1, 4, 7)_ donde _(1-4)_ = 5,1 y _(4-7)_ = 3,7, por lo tanto _(1, 4, 7)_ = 8,8.
 
-![Grafo con bucle](images/graph/graph-peso.svg)
+![Grafo Ponderado](images/graph/graph-peso.svg)
+> Ejemplo de Grafo Ponderado
 
 ---
 

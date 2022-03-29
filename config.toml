@@ -32,8 +32,7 @@ enableRobotsTXT = true
   lastname = "Zalimben"
   quote = "I try to learn from every experience, good or bad. - Tim Tebow"
   title = "Software Engineer | Professor | Coffee Lover"
-  bio = """Current Senior Software Engineer at [**Software Natura**](https://swnat.com/), and Professor at [**FP-UNA**](https://www.pol.una.py/)
-
+  bio = """
   Experienced in creating high-quality code considering the best coding practices, architectural patterns, and performance.
   Experienced in leading small development teams using agile methodologies.
 
