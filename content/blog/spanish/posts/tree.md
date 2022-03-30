@@ -6,12 +6,12 @@ description: "Los árboles son estructuras de datos no lineales, donde cada elem
 tags: ['spanish', 'español','fundamentos', 'estructura de datos']
 images: ['images/tree/tree-double-example.svg', 'images/tree/tree-example.svg']
 transform: -3%
+width: 70%
 blog_list_image: images/tree/tree-example.svg
 author: Saúl Zalimben
 slug: tree
 idiom: Español
 ---
-
 
 Los árboles son estructuras de datos no lineales, donde cada elemento del árbol es una estructura del tipo **nodo (_node_)**, y hace referencia a otros nodos dentro del árbol, las conexiones entre nodos se denominan **aristas o ramas o arcos (_edge_)**.
 
@@ -70,6 +70,7 @@ Un árbol binario es un conjunto finito de cero o más nodos, tales que:
 ### Árboles Binarios de Búsqueda
 Un árbol binario de búsqueda, es un árbol binario que cumple que el subárbol izquierdo de cualquier nodo (si no está vacío) contiene valores menores que el que contiene dicho nodo, y el subárbol derecho (si no está vacío) contiene valores mayores, donde existe una relación de orden establecida entre los elementos de los nodos.
 
+
 El árbol binario de búsqueda se construye teniendo en cuenta las siguientes premisas:
 - El primer elemento se utiliza para crear el nodo raíz.
 - Los elementos del árbol deben ser tales que pueda existir un orden dentro del mismo.
@@ -79,7 +80,7 @@ El árbol binario de búsqueda se construye teniendo en cuenta las siguientes pr
 > Un árbol binario de búsqueda es una especialización de los árboles binarios.
 
 ![Árbol Binario](images/tree/tree-binary.svg)
-Ejemplo de árbol binario de búsqueda
+> Ejemplo de árbol binario de búsqueda
 
 ---
 
