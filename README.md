@@ -1,15 +1,20 @@
 <div align="center">
-  <h1>Identity</h1>
+  <h1>Personal Identity & Blog Website</h1>
 </div>
 
-<p align="center">
-  My personal identity website with :heart: and Hugo
-</p>
+<div align="center">
+  Powered by <a href="https://gohugo.io/" target="_blank"> Hugo </a> :heart: and :coffee:
+</div>
 
-## License
+<div align="center">
+  <h2>
+    <a href="https://zalimben.github.io" target="_blank"> Zalimben.github.io </a>
+  </h2>
+</div>
 
-Provided under the terms of the CC BY-NC-SA 4.0 License.
+### License
 
-[Go to](https://zalimben.github.io)
+Provided under the terms of the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/deed.es).
+
 
 > This project forked and has been modified from [Hugo Awesome Identity](https://github.com/posquit0/hugo-awesome-identity).

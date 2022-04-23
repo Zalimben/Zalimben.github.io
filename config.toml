@@ -56,9 +56,9 @@ enableRobotsTXT = true
   name = "Review my CV"
   url = "https://drive.google.com/file/d/1vdkxd1E3Y3jIyFXeh1QNu6FDXwe8YHHP/view?usp=sharing"
 
-##[[params.actions]]
-##  name = "CV [Spanish]"
-##  url = "https://github.com/Zalimben/Zalimben.github.io/raw/main/files/CV_Spanish.pdf"
+[[params.actions]]
+  name = "eBooks"
+  url = "https://leanpub.com/u/szalimben"
 
 [[params.actions]]
   name = "Buy Me a Coffee"
