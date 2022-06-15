@@ -12,6 +12,20 @@
   </h2>
 </div>
 
+## Install 
+
+### Requirements
+- [Hugo](https://gohugo.io/)
+
+### Init
+```bash
+git clone <this-project>
+git submodule init
+git submodule update
+hugo server
+```
+
+
 ### License
 
 Provided under the terms of the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/deed.es).

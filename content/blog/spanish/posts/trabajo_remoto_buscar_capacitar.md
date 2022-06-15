@@ -36,7 +36,7 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 >
 > --Mark Victor Hansen
 
-#### Sitios Populares
+### Sitios Populares
 - AngelList: https://angel.co
 - Mashable: http://jobs.mashable.com/jobs
 - Indeed: http://indeed.com
@@ -49,7 +49,7 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Toptal: https://toptal.com
 - Hired: https://hired.com
 
-#### Sitios Populares para buscar Trabajo Remoto
+### Sitios Populares para buscar Trabajo Remoto
 - FlexJobs: http://flexjobs.com
 - WeWorkRemotely: http://weworkremotely.com
 - RemoteOk: http://remoteok.io/remote-dev-jobs 
@@ -68,14 +68,17 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Sitepoint: https://sitepoint.com/jobs/
 - Freshersworld: https://www.freshersworld.com/
 - Skipthedrive: https://www.skipthedrive.com/
+- Authentic Jobs: https://authenticjobs.com/
+- Remote Jobs Club: https://remotejobsclub.com/
+- Remote4Me https://remote4me.com/
 
-#### Trabajos en Startup
+### Trabajos en Startup
 - AngelList: http://angel.co/jobs
 - Product Hunt: http://producthunt.com/jobs
 - Startupers: http://startupers.com
 - YCombinator: http://news.ycombinator.com/jobs
 
-#### Trabajos Específicos por Lenjuage/Framework 
+### Trabajos Específicos por Lenjuage/Framework 
 - iOS: http://iosdevjobs.com
 - React: http://reactjobboard.com
 - Vue Jobs: http://vuejobs.com
@@ -83,23 +86,26 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Python Jobs: http://python.org/jobs
 - JavaScript Job XYZ: http://javascriptjob.xyz
 - Javascript Remotely: http://jsremotely.com
+- Ruby Now: https://jobs.rubynow.com/
 
-#### Trabajos para Juniors
+### Trabajos para Juniors
 - JrDevJobs: http://jrdevjobs.com
 - Stackoverflow Junior Jobs: https://stackoverflow.com/jobs/junior-developer-jobs
 
-#### Trabajos Freelance
+### Trabajos Freelance
 - Freelancer: http://freelancer.com/jobs
 - Upwork: http://upwork.com
 - FlexJobs: http://flexjobs.com/jobs
 - FreelancerMap: http://freelancermap.com
 - Gun.io: http://gun.io
+- SolidGigs: https://solidgigs.com/
+- DynamiteJobs: https://dynamitejobs.com/
+- Guru: https://www.guru.com/
 
-#### Sitios Extras
+### Sitios Extras
 - Muse: http://themuse.com/jobs
 - Tuts+: http://jobs.tutsplus.com
 - Krop: http://krop.com
-- PowerToFly: http://powertofly.com/jobs
 - Developers for Hire: http://developersforhire.com 
 - Joblist.app: http://joblist.app
 - Fullstack Job: http://fullstackjob.com
@@ -107,6 +113,38 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Jobspresso: http://jobspresso.co
 - Jobs in Europe: http://landing.jobs
 - TripleByte: https://triplebyte.com
+- TranslatorsCafe: https://www.translatorscafe.com/cafe/searchjobs.asp
+- Idealist: https://www.idealist.org/es/
+- Media Bistro: https://www.mediabistro.com/
+- NoDesk: https://nodesk.co/ 
+- 100 Telecommute Jobs: https://100telecommutejobs.com/telejobs/
+- fiverr: https://www.fiverr.com/start_selling?source=top_nav
+- Hitmarker: https://hitmarker.net/
+- Sportekjobs: https://sportekjobs.com/remote-jobs-in-sports
+
+#### Trabajos enfocados a mujeres
+- PowerToFly: http://powertofly.com/jobs
+- Rise: https://joinrise.co/
+- Apres: https://apresgroup.com/
+- Women Who Code: https://www.womenwhocode.com/jobs
+- Hire Tech Ladies https://www.hiretechladies.com/
+
+#### Diseñadores && ilustradores
+- Dribbble: https://dribbble.com/jobs
+- fiverr: https://www.fiverr.com/start_selling?source=top_nav
+- 99 Designs: https://es.99designs.com/
+- SolidGigs: https://solidgigs.com/
+
+#### Redes Sociales
+- togglhire: https://toggl.com/hire/
+
+#### Creador de Contenido
+- ProBlogger:  https://problogger.com/
+- Freelancewriting: https://www.freelancewriting.com/
+- Textbroker: https://www.textbroker.com/
+- Authentic Jobs: https://authenticjobs.com/
+- Contena: https://www.contena.co/
+- crowd content: https://www.crowdcontent.com/
 
 ## La Práctica hace al Maestro
 
@@ -133,11 +171,13 @@ que ponen a prueba tu conocimiento de algoritmos, estructuras de datos y matemá
 - Topcoder: https://www.topcoder.com/
 - {} Programmr: http://www.programmr.com/
 
-## Libros Recomendados
+## Bonus
+### Recursos y artículos
+- [The Top 60 Remote Work Websites for New Opportunities in 2022]( https://www.ireviews.com/the-top-60-remote-work-websites-for-new-opportunities-in-2022/)
+
+### Libros Recomendados
 - [Cracking the Coding Interview](https://www.amazon.com/dp/098478280X/?tag=javamysqlanta-20) by [Gayle Laakmann McDowell](https://www.gayle.com/)
 - [Decoding the Technical Interview](https://technicalinterviews.dev/) by [Emma Bostian](https://twitter.com/EmmaBostian?s=20)
 
 
 ###### Inspirado por #TechTwitter, [Randall Kanna](https://twitter.com/RandallKanna?s=20) y su sorprendente artículo [Ultimate List of Sites to Job Hunt for Developers](https://randallkanna.com/job-sites-for-developers/)
-
-

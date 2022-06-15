@@ -25,7 +25,7 @@ Find a company and a job that you like, here a list of places to look for *"Job 
 >
 >--Mark Victor Hansen
 
-#### Most Popular Sites
+### Most Popular Sites
 - AngelList: https://angel.co
 - Mashable: http://jobs.mashable.com/jobs
 - Indeed: http://indeed.com
@@ -38,7 +38,7 @@ Find a company and a job that you like, here a list of places to look for *"Job 
 - Toptal: https://toptal.com
 - Hired: https://hired.com
 
-#### Popular Sites for Remote Jobs
+### Popular Sites for Remote Jobs
 - FlexJobs: http://flexjobs.com
 - WeWorkRemotely: http://weworkremotely.com
 - RemoteOk: http://remoteok.io/remote-dev-jobs 
@@ -57,14 +57,17 @@ Find a company and a job that you like, here a list of places to look for *"Job 
 - Sitepoint: https://sitepoint.com/jobs/
 - Freshersworld: https://www.freshersworld.com/
 - Skipthedrive: https://www.skipthedrive.com/
+- Authentic Jobs: https://authenticjobs.com/
+- Remote Jobs Club: https://remotejobsclub.com/
+- Remote4Me https://remote4me.com/
 
-#### Startup Jobs
+### Startup Jobs
 - AngelList: http://angel.co/jobs
 - Product Hunt: http://producthunt.com/jobs
 - Startupers: http://startupers.com
 - YCombinator: http://news.ycombinator.com/jobs
 
-#### Language/Framework Specific
+### Language/Framework Specific
 - iOS: http://iosdevjobs.com
 - React: http://reactjobboard.com
 - Vue Jobs: http://vuejobs.com
@@ -72,23 +75,26 @@ Find a company and a job that you like, here a list of places to look for *"Job 
 - Python Jobs: http://python.org/jobs
 - JavaScript Job XYZ: http://javascriptjob.xyz
 - Javascript Remotely: http://jsremotely.com
+- Ruby Now: https://jobs.rubynow.com/
 
-#### Junior Dev Jobs
+### Junior Dev Jobs
 - JrDevJobs: http://jrdevjobs.com
 - Stackoverflow Junior Jobs: https://stackoverflow.com/jobs/junior-developer-jobs
 
-#### Freelance Dev Jobs
+### Freelance Dev Jobs
 - Freelancer: http://freelancer.com/jobs
 - Upwork: http://upwork.com
 - FlexJobs: http://flexjobs.com/jobs
 - FreelancerMap: http://freelancermap.com
 - Gun.io: http://gun.io
+- SolidGigs: https://solidgigs.com/
+- DynamiteJobs: https://dynamitejobs.com/
+- Guru: https://www.guru.com/
 
-#### Misc Job Sites
+### Misc Job Sites
 - Muse: http://themuse.com/jobs
 - Tuts+: http://jobs.tutsplus.com
 - Krop: http://krop.com
-- PowerToFly: http://powertofly.com/jobs
 - Developers for Hire: http://developersforhire.com 
 - Joblist.app: http://joblist.app
 - Fullstack Job: http://fullstackjob.com
@@ -96,6 +102,38 @@ Find a company and a job that you like, here a list of places to look for *"Job 
 - Jobspresso: http://jobspresso.co
 - Jobs in Europe: http://landing.jobs
 - TripleByte: https://triplebyte.com
+- TranslatorsCafe: https://www.translatorscafe.com/cafe/searchjobs.asp
+- Idealist: https://www.idealist.org/es/
+- Media Bistro: https://www.mediabistro.com/
+- NoDesk: https://nodesk.co/ 
+- 100 Telecommute Jobs: https://100telecommutejobs.com/telejobs/
+- fiverr: https://www.fiverr.com/start_selling?source=top_nav
+- Hitmarker: https://hitmarker.net/
+- Sportekjobs: https://sportekjobs.com/remote-jobs-in-sports
+
+#### Woman Power
+- PowerToFly: http://powertofly.com/jobs
+- Rise: https://joinrise.co/
+- Apres: https://apresgroup.com/
+- Women Who Code: https://www.womenwhocode.com/jobs
+- Hire Tech Ladies https://www.hiretechladies.com/
+
+#### Graphic designers, illustrators, web designers
+- Dribbble: https://dribbble.com/jobs
+- fiverr: https://www.fiverr.com/start_selling?source=top_nav
+- 99 Designs: https://es.99designs.com/
+- SolidGigs: https://solidgigs.com/
+
+#### Social Media
+- togglhire: https://toggl.com/hire/
+
+#### Writing
+- ProBlogger:  https://problogger.com/
+- Freelancewriting: https://www.freelancewriting.com/
+- Textbroker: https://www.textbroker.com/
+- Authentic Jobs: https://authenticjobs.com/
+- Contena: https://www.contena.co/
+- crowd content: https://www.crowdcontent.com/
 
 ## Practice makes the Master
 
@@ -121,7 +159,11 @@ Challenge yourself to code and interview better, hundreds of coding challenges t
 - Topcoder: https://www.topcoder.com/
 - {} Programmr: http://www.programmr.com/
 
-## Bonus Books
+## Bonus  
+### Resources and articles
+- [The Top 60 Remote Work Websites for New Opportunities in 2022]( https://www.ireviews.com/the-top-60-remote-work-websites-for-new-opportunities-in-2022/)
+
+### Books
 - [Cracking the Coding Interview](https://www.amazon.com/dp/098478280X/?tag=javamysqlanta-20) by [Gayle Laakmann McDowell](https://www.gayle.com/)
 - [Decoding the Technical Interview](https://technicalinterviews.dev/) by [Emma Bostian](https://twitter.com/EmmaBostian?s=20)
 
