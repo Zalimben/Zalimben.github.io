@@ -47,6 +47,8 @@ enableRobotsTXT = true
   devto = "szalimben"
   researchgate = "Saul-Zalimben"
   twitter = "sZalimben"
+  stackoverflow = "3630620"
+  leetcode = "szalimben"
 
 ## Actions Configurations
 [[params.actions]]

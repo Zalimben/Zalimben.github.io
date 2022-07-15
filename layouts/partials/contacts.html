@@ -53,6 +53,10 @@
   <a class="contact" target="_blank" href="https://hackerrank.com/{{ $id }}">
     <i class="fab fa-hackerrank" aria-hidden="true"></i>
   </a>
+    {{- else if (eq $service "leetcode") }}
+  <a class="contact" target="_blank" href="https://leetcode.com/{{ $id }}">
+    <i class="fas fa-code" aria-hidden="true"></i>
+  </a>
     {{- else if (eq $service "researchgate") }}
   <a class="contact" target="_blank" href="https://www.researchgate.net/profile/{{ $id }}">
     <i class="fab fa-researchgate" aria-hidden="true"></i>
