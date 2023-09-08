@@ -89,5 +89,6 @@ Nothing exists on a nice clean spectrum for software architects—every decision
 - Ozkaya, M. Design Microservices Architecture with Patterns & Principles [MOOC]. Udemy. https://www.udemy.com/course/design-microservices-architecture-with-patterns-principles/
 - Fowler, M. (2019, August 1). Software Architecture Guide. Martin Fowler. https://martinfowler.com/architecture/
 
-## Acknowledge
-- Images were extracted from Richards, M. (2022) and Richards, M., & Ford, N. (2020).
+## Acknowledgements
+- Cover image by [Alex wong](https://unsplash.com/@killerfvith) on [Unsplash](https://unsplash.com/license)
+- Content images were extracted from Richards, M. (2022) and Richards, M., & Ford, N. (2020).
