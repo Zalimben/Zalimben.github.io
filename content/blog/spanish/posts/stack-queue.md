@@ -19,7 +19,7 @@ Si acabas de encontrar esta publicación, antes de continuar te recomiendo que l
 Las pilas y colas son estructuras de datos lineales, donde existen restricciones para insertar y eliminar elementos. Son casos particulares de la estructura lista, y se pueden implementar mediante vectores o listas enlazadas.
 
 ### Operaciones elementales sobre Pilas y Colas
-- Insertar: Push -> apilar (Pila), Queue -> encolar (Cola)
+- Insertar: Push -> apilar (Pila), Enqueue -> encolar (Cola)
 - Eliminar: Pop  -> desapilar (Pila),  Dequeue -> desencolar (Cola)
 
 ## Pilas

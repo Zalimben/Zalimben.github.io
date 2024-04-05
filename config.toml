@@ -33,8 +33,6 @@ enableRobotsTXT = true
   quote = "I try to learn from every experience, good or bad. - Tim Tebow"
   title = "Software Engineer | Professor | Coffee Lover"
   bio = """
-  Computer science professional with over eight years of experience. 
-
   I am experienced in creating high‐quality code considering the best coding practices, architectural patterns, and performance. 
 
   I am interested in devising a better problem‐solving method for challenging tasks and learning new technologies and tools.
@@ -89,7 +87,7 @@ sectionPagesMenu = "main"
 
 ## Footer Configurations
 [params.footer]
-  copyright = "  &copy; 2023 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  copyright = "&copy; 2024 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
   poweredBy = true
 
 # Markup related configuration in Hugo
