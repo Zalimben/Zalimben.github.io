@@ -37,10 +37,9 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 > --Mark Victor Hansen
 
 ### Sitios Populares
-- AngelList: https://angel.co
-- Mashable: http://jobs.mashable.com/jobs
+- Wellfound: https://wellfound.com/
 - Indeed: http://indeed.com
-- StackOverflow: http://stackoverflow.com/jobs 
+- StackOverflow: https://stackoverflowjobs.com/
 - LinkedIn: http://linkedIn.com
 - Glassdoor: http://glassdoor.com
 - Dice: http://dice.com
@@ -50,47 +49,39 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Hired: https://hired.com
 
 ### Sitios Populares para buscar Trabajo Remoto
+- Arc: https://arc.dev/remote-jobs
 - FlexJobs: http://flexjobs.com
 - WeWorkRemotely: http://weworkremotely.com
 - RemoteOk: http://remoteok.io/remote-dev-jobs 
-- Stackoverflow: http://stackoverflow.com/jobs/remote-developer-jobs
 - Working Nomads: http://workingnomads.co/remote-development-jobs
 - Remote.co: https://remote.co/remote-jobs/developer/
 - Remoters: http://remoters.net/jobs/software-development
 - JS Remotely: http://jsremotely.com
 - DailyRemote: https://dailyremote.com
 - Remotive: https://remotive.io/remote-jobs/software-dev
-- Outsourcely: http://outsourcely.com/remote-web-development-jobs
 - Pangian: https://pangian.com/job-travel-remote/
 - Remote Talent: http://remotetalent.co/jobs 
 - JustRemote: https://justremote.co/remote-developer-jobs
 - RemoteLeaf: https://remoteleaf.com
-- Sitepoint: https://sitepoint.com/jobs/
+- Sitepoint: https://www.sitepoint.com/jobs-for-developers/
 - Freshersworld: https://www.freshersworld.com/
 - Skipthedrive: https://www.skipthedrive.com/
 - Authentic Jobs: https://authenticjobs.com/
-- Remote Jobs Club: https://remotejobsclub.com/
 - Remote4Me https://remote4me.com/
 
 ### Trabajos en Startup
-- AngelList: http://angel.co/jobs
-- Product Hunt: http://producthunt.com/jobs
-- Startupers: http://startupers.com
+- Wellfound: https://wellfound.com
 - YCombinator: http://news.ycombinator.com/jobs
 
 ### Trabajos Específicos por Lenjuage/Framework 
 - iOS: http://iosdevjobs.com
-- React: http://reactjobboard.com
 - Vue Jobs: http://vuejobs.com
-- Ember: http://jobs.emberjs.com
 - Python Jobs: http://python.org/jobs
 - JavaScript Job XYZ: http://javascriptjob.xyz
 - Javascript Remotely: http://jsremotely.com
-- Ruby Now: https://jobs.rubynow.com/
 
 ### Trabajos para Juniors
 - JrDevJobs: http://jrdevjobs.com
-- Stackoverflow Junior Jobs: https://stackoverflow.com/jobs/junior-developer-jobs
 
 ### Trabajos Freelance
 - Freelancer: http://freelancer.com/jobs
@@ -103,30 +94,24 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Guru: https://www.guru.com/
 
 ### Sitios Extras
+- Creativepool: https://creativepool.com/jobs/
 - Muse: http://themuse.com/jobs
-- Tuts+: http://jobs.tutsplus.com
-- Krop: http://krop.com
 - Developers for Hire: http://developersforhire.com 
 - Joblist.app: http://joblist.app
 - Fullstack Job: http://fullstackjob.com
-- Authentic Jobs: http://authenticjobs.com
 - Jobspresso: http://jobspresso.co
 - Jobs in Europe: http://landing.jobs
-- TripleByte: https://triplebyte.com
 - TranslatorsCafe: https://www.translatorscafe.com/cafe/searchjobs.asp
 - Idealist: https://www.idealist.org/es/
 - Media Bistro: https://www.mediabistro.com/
-- NoDesk: https://nodesk.co/ 
-- 100 Telecommute Jobs: https://100telecommutejobs.com/telejobs/
+- NoDesk: https://nodesk.co/
 - fiverr: https://www.fiverr.com/start_selling?source=top_nav
 - Hitmarker: https://hitmarker.net/
-- Sportekjobs: https://sportekjobs.com/remote-jobs-in-sports
 
 #### Trabajos enfocados a mujeres
 - PowerToFly: http://powertofly.com/jobs
 - Rise: https://joinrise.co/
 - Apres: https://apresgroup.com/
-- Women Who Code: https://www.womenwhocode.com/jobs
 - Hire Tech Ladies https://www.hiretechladies.com/
 
 #### Diseñadores && ilustradores
@@ -144,7 +129,7 @@ Encuentra una empresa y un trabajo que te guste, aquí una lista de lugares para
 - Textbroker: https://www.textbroker.com/
 - Authentic Jobs: https://authenticjobs.com/
 - Contena: https://www.contena.co/
-- crowd content: https://www.crowdcontent.com/
+- Stellar Content: https://www.stellarcontent.com/
 
 ## La Práctica hace al Maestro
 
@@ -157,7 +142,6 @@ que ponen a prueba tu conocimiento de algoritmos, estructuras de datos y matemá
 
 - AlgoExpert: https://www.algoexpert.io
 - CodeChef: https://www.codechef.com/
-- Codeo: https://codeo.app
 - Codesignal: https://codesignal.com/
 - coderbyte: https://coderbyte.com/
 - CodeWars: https://www.codewars.com/
@@ -169,7 +153,6 @@ que ponen a prueba tu conocimiento de algoritmos, estructuras de datos y matemá
 - HackerRank: https://hackerrank.com
 - LeetCode: https://leetcode.com
 - Topcoder: https://www.topcoder.com/
-- {} Programmr: http://www.programmr.com/
 
 ## Bonus
 ### Recursos y artículos

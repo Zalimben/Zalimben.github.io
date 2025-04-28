@@ -87,7 +87,7 @@ sectionPagesMenu = "main"
 
 ## Footer Configurations
 [params.footer]
-  copyright = "&copy; 2024 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  copyright = "&copy; 2025 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
   poweredBy = true
 
 # Markup related configuration in Hugo
