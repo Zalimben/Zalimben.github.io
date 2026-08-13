@@ -137,7 +137,7 @@ Distributed architectures are useful, but their supporters admit that using them
 
 A strong argument is made for starting with a monolith-first strategy. You should build a new application as a monolith, even if you think it will need a distributed architecture later.
 
-The logical way is to design a monolith carefully, focusing on making the software modular and organizing the data correctly. Pay attention to API boundaries and how the data is stored. If you do this well, it's quite easy to transition to distributed architectures.
+The logical way is to design a monolith carefully, focusing on [making the software modular](https://www.bairesdev.com/blog/angular-project-structure-best-practices-tips/) and organizing the data correctly. Pay attention to API boundaries and how the data is stored. If you do this well, it's quite easy to transition to distributed architectures.
 
 A more common approach is to start with a monolith and gradually peel off small services at the edges. Such an approach can leave a substantial monolith at the heart of the microservices architecture, but with most new developments occurring in the microservices the monolith is relatively quiescent.
 
@@ -154,6 +154,7 @@ Another common approach is to just replace the monolith entirely. Don't worry ab
 3. Ozkaya, M. Design Microservices Architecture with Patterns & Principles [MOOC]. Udemy. https://www.udemy.com/course/design-microservices-architecture-with-patterns-principles/
 4. Fowler, M. (2019, August 1). Software Architecture Guide. Martin Fowler. https://martinfowler.com/architecture/
 5. Fowler, M. (2015, June 3). MonolithFirst. Martin Fowler. https://martinfowler.com/bliki/MonolithFirst.html
+6. Erolin, J. (2026) Angular Project Structure: Best Practices for Files & Folders. Blog. https://www.bairesdev.com/blog/angular-project-structure-best-practices-tips/
 
 ## Acknowledgements
 - Cover image by [@Uwe Hensel](https://unsplash.com/@sonnar_mc) on [Unsplash](https://unsplash.com/license)

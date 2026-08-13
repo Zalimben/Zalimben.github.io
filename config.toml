@@ -85,9 +85,17 @@ sectionPagesMenu = "main"
   [menu.main.params]
     class = 'menu'
 
+[[menu.main]]
+  identifier = 'teaching'
+  name = 'Teaching'
+  pre = ""
+  url = '/teaching'
+  [menu.main.params]
+    class = 'menu'
+
 ## Footer Configurations
 [params.footer]
-  copyright = "&copy; 2025 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  copyright = "&copy; 2026 Saúl Zalimben. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
   poweredBy = true
 
 # Markup related configuration in Hugo

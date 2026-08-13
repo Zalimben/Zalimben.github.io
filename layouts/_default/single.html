@@ -30,6 +30,8 @@
     </ul>
     {{ end }}
 
+    {{ if .Params.post }}
+
     <h3 class="post-author">
          {{ .Params.author }}
     </h3>
@@ -39,6 +41,7 @@
         {{ end }}
         <b> | </b> {{.ReadingTime }} min read
     <hr>
+    {{end}}
     <section id="content" class="markdown-body" >
         {{ .Content }}
     </section>
